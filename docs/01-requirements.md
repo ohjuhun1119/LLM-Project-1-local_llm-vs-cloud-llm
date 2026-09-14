@@ -28,7 +28,6 @@
 | 형식 준수 (Instruction Following) | 2순위 | 표/bullet 등 요청 형식을 따르는지 확인 |
 | 응답 속도 | 3순위 | 질문당 평균 응답 시간(초) |
 
-# 모델 요구사항 (Requirements)
 
 ## STEP 2. 모델 요구사항 정의
 
