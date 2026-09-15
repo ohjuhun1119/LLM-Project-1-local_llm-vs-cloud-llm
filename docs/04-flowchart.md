@@ -1,4 +1,4 @@
-'''mermaid
+```mermaid
 flowchart TD
     A[문제 정의] --> B[모델 요구사항 정의]
     B --> C[Use Case 선정]
@@ -16,4 +16,4 @@ flowchart TD
     L -->|No| N[Cloud 또는 하이브리드 운영 권고]
     M --> O[최종 모델 선정 보고서 작성]
     N --> O
-'''
+```
