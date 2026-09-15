@@ -6,8 +6,8 @@
 - **문제 정의**: [docs/00-problem-definition.md](docs/00-problem-definition.md)
 - **모델 요구사항**: [docs/01-requirements.md](docs/01-requirements.md)
 - **Use Case**: [docs/02-use-case.md](docs/02-use-case.md)
-- **후보 모델**: Gemma 3 4B, Qwen 3 4B (Local) / Cloud API 1종
-- **후보 모델 설정 이유 및 타 모델 비교**: [docs/03-candiate-model.md](docs/03-candiate-model.md)
+- **후보 모델**: Gemma 3 4B, Qwen 3 4B-instruct-2507-q4_K_M (Local) / Cloud API 1종
+- **후보 모델 설정 이유 및 타 모델 비교**: [docs/03-candiate-model.md](docs/03-candidate-model.md)
 - **flowchart**: [docs/04-flowchart.md](docs/04-flowchart.md)
 - **평가 질문 및 채점 기준**:[docs/05-eval-questions.md](docs/05-eval-questions.md)
 
@@ -20,7 +20,7 @@
 - [x] Use Case 선정
 - [x] 후보 모델 리서치
 - [x] 평가 질문 설계
-- [ ] 실행 환경 준비
+- [x] 실행 환경 준비
 - [ ] 로컬 모델 비교 실험
 - [ ] Cloud API 소규모 비교
 - [ ] 최종 모델 선정 및 보고서 작성
