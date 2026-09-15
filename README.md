@@ -7,7 +7,7 @@
 - **모델 요구사항**: [docs/01-requirements.md](docs/01-requirements.md)
 - **Use Case**: [docs/02-use-case.md](docs/02-use-case.md)
 - **후보 모델**: Gemma 3 4B, Qwen 3 4B-instruct-2507-q4_K_M (Local) / Cloud API 1종
-- **후보 모델 설정 이유 및 타 모델 비교**: [docs/03-candiate-model.md](docs/03-candidate-model.md)
+- **후보 모델 설정 이유 및 타 모델 비교**: [docs/03-candidate-model.md](docs/03-candidate-model.md)
 - **flowchart**: [docs/04-flowchart.md](docs/04-flowchart.md)
 - **평가 질문 및 채점 기준**:[docs/05-eval-questions.md](docs/05-eval-questions.md)
 
