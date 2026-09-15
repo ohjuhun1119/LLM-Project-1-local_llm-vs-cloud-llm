@@ -9,6 +9,7 @@
 - **후보 모델**: Gemma 3 4B, Qwen 3 4B (Local) / Cloud API 1종
 - **후보 모델 설정 이유 및 타 모델 비교**: [docs/03-candiate-model.md](docs/03-candiate-model.md)
 - **flowchart**: [docs/04-flowchart.md](docs/04-flowchart.md)
+- **평가 질문 및 채점 기준**:[docs/05-eval-questions.md](docs/05-eval-questions.md)
 
 ## 실행 방법
 
