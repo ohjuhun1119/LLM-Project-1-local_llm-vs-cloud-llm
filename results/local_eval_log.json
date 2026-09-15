@@ -1,0 +1,1268 @@
+{
+  "timestamp": "2026-09-15T08:51:00.357728+00:00",
+  "ollama_version": "ollama version is 0.34.0",
+  "device_info": {
+    "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python_version": "3.14.6"
+  },
+  "generation_settings": {
+    "temperature": 0,
+    "num_predict": 256
+  },
+  "runs_per_question": 2,
+  "warmup": [
+    {
+      "model": "gemma3:4b",
+      "response_text": "안녕하세요! 무엇을 도와드릴까요? 궁금한 점이 있거나, 필요한 정보가 있다면 언제든지 말씀해주세요. 😊\n",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:51:02.914894Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2524601083,
+        "load_duration": 1824114958,
+        "prompt_eval_count": 12,
+        "prompt_eval_duration": 76959000,
+        "eval_count": 27,
+        "eval_duration": 622383000,
+        "message": {
+          "role": "assistant",
+          "content": "안녕하세요! 무엇을 도와드릴까요? 궁금한 점이 있거나, 필요한 정보가 있다면 언제든지 말씀해주세요. 😊\n",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "response_text": "안녕하세요! 😊 어떻게 도와드릴까요?",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:51:04.870384Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1953355542,
+        "load_duration": 1547489292,
+        "prompt_eval_count": 12,
+        "prompt_eval_duration": 100357000,
+        "eval_count": 14,
+        "eval_duration": 300846000,
+        "message": {
+          "role": "assistant",
+          "content": "안녕하세요! 😊 어떻게 도와드릴까요?",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    }
+  ],
+  "results": [
+    {
+      "question_id": "Q1",
+      "category": "정상 사례",
+      "is_cloud_comparison": true,
+      "model": "gemma3:4b",
+      "run": 1,
+      "prompt": "다음 공지사항을 요약해줘.\n\n[사내 공지] 2026년 10월부터 재택근무 신청 절차가 변경됩니다. 기존에는 팀장 승인만 필요했으나, 앞으로는 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서는 매주 목요일까지 제출해야 다음 주 반영이 가능합니다. 문의는 인사팀 내선 1234로 부탁드립니다.",
+      "response_text": "2026년 10월부터 재택근무 신청 시 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서 제출 마감은 매주 목요일이며, 문의는 인사팀 내선 1234로 문의해주세요.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:51:06.497923Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1626707750,
+        "load_duration": 557084,
+        "prompt_eval_count": 112,
+        "prompt_eval_duration": 123359000,
+        "eval_count": 64,
+        "eval_duration": 1499994000,
+        "message": {
+          "role": "assistant",
+          "content": "2026년 10월부터 재택근무 신청 시 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서 제출 마감은 매주 목요일이며, 문의는 인사팀 내선 1234로 문의해주세요.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q1",
+      "category": "정상 사례",
+      "is_cloud_comparison": true,
+      "model": "gemma3:4b",
+      "run": 2,
+      "prompt": "다음 공지사항을 요약해줘.\n\n[사내 공지] 2026년 10월부터 재택근무 신청 절차가 변경됩니다. 기존에는 팀장 승인만 필요했으나, 앞으로는 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서는 매주 목요일까지 제출해야 다음 주 반영이 가능합니다. 문의는 인사팀 내선 1234로 부탁드립니다.",
+      "response_text": "2026년 10월부터 재택근무 신청 시 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서 제출 마감은 매주 목요일이며, 문의는 인사팀 내선 1234로 문의해주세요.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:51:07.982141Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1483546208,
+        "load_duration": 514625,
+        "prompt_eval_count": 112,
+        "prompt_eval_duration": 53755000,
+        "eval_count": 64,
+        "eval_duration": 1428438000,
+        "message": {
+          "role": "assistant",
+          "content": "2026년 10월부터 재택근무 신청 시 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서 제출 마감은 매주 목요일이며, 문의는 인사팀 내선 1234로 문의해주세요.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q1",
+      "category": "정상 사례",
+      "is_cloud_comparison": true,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 1,
+      "prompt": "다음 공지사항을 요약해줘.\n\n[사내 공지] 2026년 10월부터 재택근무 신청 절차가 변경됩니다. 기존에는 팀장 승인만 필요했으나, 앞으로는 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서는 매주 목요일까지 제출해야 다음 주 반영이 가능합니다. 문의는 인사팀 내선 1234로 부탁드립니다.",
+      "response_text": "2026년 10월부터 재택근무 신청 절차가 변경됩니다. 팀장 승인 후 인사팀(김지원 대리)에 신청서를 제출해야 하며, 매주 목요일까지 제출해야 다음 주에 반영됩니다. 문의는 인사팀 내선 1234로 해주세요.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:51:10.081961Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2098721041,
+        "load_duration": 525250,
+        "prompt_eval_count": 131,
+        "prompt_eval_duration": 216372000,
+        "eval_count": 84,
+        "eval_duration": 1878309000,
+        "message": {
+          "role": "assistant",
+          "content": "2026년 10월부터 재택근무 신청 절차가 변경됩니다. 팀장 승인 후 인사팀(김지원 대리)에 신청서를 제출해야 하며, 매주 목요일까지 제출해야 다음 주에 반영됩니다. 문의는 인사팀 내선 1234로 해주세요.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q1",
+      "category": "정상 사례",
+      "is_cloud_comparison": true,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 2,
+      "prompt": "다음 공지사항을 요약해줘.\n\n[사내 공지] 2026년 10월부터 재택근무 신청 절차가 변경됩니다. 기존에는 팀장 승인만 필요했으나, 앞으로는 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서는 매주 목요일까지 제출해야 다음 주 반영이 가능합니다. 문의는 인사팀 내선 1234로 부탁드립니다.",
+      "response_text": "2026년 10월부터 재택근무 신청 절차가 변경됩니다. 팀장 승인 후 인사팀(김지원 대리)에 신청서를 제출해야 하며, 매주 목요일까지 제출해야 다음 주에 반영됩니다. 문의는 인사팀 내선 1234로 해주세요.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:51:12.004334Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1921787458,
+        "load_duration": 500292,
+        "prompt_eval_count": 131,
+        "prompt_eval_duration": 23694000,
+        "eval_count": 84,
+        "eval_duration": 1894134000,
+        "message": {
+          "role": "assistant",
+          "content": "2026년 10월부터 재택근무 신청 절차가 변경됩니다. 팀장 승인 후 인사팀(김지원 대리)에 신청서를 제출해야 하며, 매주 목요일까지 제출해야 다음 주에 반영됩니다. 문의는 인사팀 내선 1234로 해주세요.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q2",
+      "category": "정상 사례",
+      "is_cloud_comparison": false,
+      "model": "gemma3:4b",
+      "run": 1,
+      "prompt": "다음 회의록을 요약해줘.\n\n[주간 회의록] 참석자: 박민수 팀장, 이서연 대리, 최동훈 사원. 신제품 A의 출시일을 11월 15일로 확정. 이서연 대리가 마케팅 자료 초안을 11월 1일까지 작성하기로 함. 최동훈 사원은 협력사 견적서를 다음 주까지 수합. 다음 회의는 10월 20일 예정.",
+      "response_text": "다음은 회의록 요약입니다.\n\n**주요 내용:**\n\n*   신제품 A 출시일: 11월 15일 확정\n*   이서연 대리: 11월 1일까지 마케팅 자료 초안 작성\n*   최동훈 사원: 다음 주까지 협력사 견적서 수합\n*   다음 회의: 10월 20일 예정",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:51:14.227022Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2221332708,
+        "load_duration": 521416,
+        "prompt_eval_count": 122,
+        "prompt_eval_duration": 118995000,
+        "eval_count": 94,
+        "eval_duration": 2092556999,
+        "message": {
+          "role": "assistant",
+          "content": "다음은 회의록 요약입니다.\n\n**주요 내용:**\n\n*   신제품 A 출시일: 11월 15일 확정\n*   이서연 대리: 11월 1일까지 마케팅 자료 초안 작성\n*   최동훈 사원: 다음 주까지 협력사 견적서 수합\n*   다음 회의: 10월 20일 예정",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q2",
+      "category": "정상 사례",
+      "is_cloud_comparison": false,
+      "model": "gemma3:4b",
+      "run": 2,
+      "prompt": "다음 회의록을 요약해줘.\n\n[주간 회의록] 참석자: 박민수 팀장, 이서연 대리, 최동훈 사원. 신제품 A의 출시일을 11월 15일로 확정. 이서연 대리가 마케팅 자료 초안을 11월 1일까지 작성하기로 함. 최동훈 사원은 협력사 견적서를 다음 주까지 수합. 다음 회의는 10월 20일 예정.",
+      "response_text": "다음은 회의록 요약입니다.\n\n**주요 내용:**\n\n*   신제품 A 출시일: 11월 15일 확정\n*   이서연 대리: 11월 1일까지 마케팅 자료 초안 작성\n*   최동훈 사원: 다음 주까지 협력사 견적서 수합\n*   다음 회의: 10월 20일 예정",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:51:16.47808Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2249217333,
+        "load_duration": 667708,
+        "prompt_eval_count": 122,
+        "prompt_eval_duration": 52013000,
+        "eval_count": 94,
+        "eval_duration": 2195487000,
+        "message": {
+          "role": "assistant",
+          "content": "다음은 회의록 요약입니다.\n\n**주요 내용:**\n\n*   신제품 A 출시일: 11월 15일 확정\n*   이서연 대리: 11월 1일까지 마케팅 자료 초안 작성\n*   최동훈 사원: 다음 주까지 협력사 견적서 수합\n*   다음 회의: 10월 20일 예정",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q2",
+      "category": "정상 사례",
+      "is_cloud_comparison": false,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 1,
+      "prompt": "다음 회의록을 요약해줘.\n\n[주간 회의록] 참석자: 박민수 팀장, 이서연 대리, 최동훈 사원. 신제품 A의 출시일을 11월 15일로 확정. 이서연 대리가 마케팅 자료 초안을 11월 1일까지 작성하기로 함. 최동훈 사원은 협력사 견적서를 다음 주까지 수합. 다음 회의는 10월 20일 예정.",
+      "response_text": "[주간 회의 요약]\n\n- 신제품 A의 출시일은 11월 15일로 확정됨.  \n- 이서연 대리가 마케팅 자료 초안을 11월 1일까지 완성하여 제출.  \n- 최동훈 사원이 협력사 견적서를 다음 주까지 수합.  \n- 다음 회의는 10월 20일에 개최.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:51:19.172729Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2693991916,
+        "load_duration": 538333,
+        "prompt_eval_count": 135,
+        "prompt_eval_duration": 181679000,
+        "eval_count": 104,
+        "eval_duration": 2502466000,
+        "message": {
+          "role": "assistant",
+          "content": "[주간 회의 요약]\n\n- 신제품 A의 출시일은 11월 15일로 확정됨.  \n- 이서연 대리가 마케팅 자료 초안을 11월 1일까지 완성하여 제출.  \n- 최동훈 사원이 협력사 견적서를 다음 주까지 수합.  \n- 다음 회의는 10월 20일에 개최.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q2",
+      "category": "정상 사례",
+      "is_cloud_comparison": false,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 2,
+      "prompt": "다음 회의록을 요약해줘.\n\n[주간 회의록] 참석자: 박민수 팀장, 이서연 대리, 최동훈 사원. 신제품 A의 출시일을 11월 15일로 확정. 이서연 대리가 마케팅 자료 초안을 11월 1일까지 작성하기로 함. 최동훈 사원은 협력사 견적서를 다음 주까지 수합. 다음 회의는 10월 20일 예정.",
+      "response_text": "[주간 회의 요약]\n\n- 신제품 A의 출시일은 11월 15일로 확정됨.  \n- 이서연 대리가 마케팅 자료 초안을 11월 1일까지 완성하여 제출.  \n- 최동훈 사원이 협력사 견적서를 다음 주까지 수합.  \n- 다음 회의는 10월 20일에 개최.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:51:21.59948Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2426096625,
+        "load_duration": 803500,
+        "prompt_eval_count": 135,
+        "prompt_eval_duration": 24721000,
+        "eval_count": 104,
+        "eval_duration": 2397325000,
+        "message": {
+          "role": "assistant",
+          "content": "[주간 회의 요약]\n\n- 신제품 A의 출시일은 11월 15일로 확정됨.  \n- 이서연 대리가 마케팅 자료 초안을 11월 1일까지 완성하여 제출.  \n- 최동훈 사원이 협력사 견적서를 다음 주까지 수합.  \n- 다음 회의는 10월 20일에 개최.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q3",
+      "category": "정상 사례",
+      "is_cloud_comparison": true,
+      "model": "gemma3:4b",
+      "run": 1,
+      "prompt": "다음 진행 보고서를 요약해줘.\n\n[3분기 진행 보고서] 프로젝트 X는 전체 일정의 70% 완료. 개발 파트는 예정대로 진행 중이나, 디자인 파트는 인력 부족으로 2주 지연 예상. 다음 마일스톤은 12월 1일 UAT 시작. 리스크: 외부 API 연동 지연 가능성 존재.",
+      "response_text": "프로젝트 X는 3분기 진행 상황이 70% 완료되었으며, 개발 파트는 계획대로 진행 중입니다. 하지만 디자인 파트가 인력 부족으로 인해 2주 지연될 예정입니다. 다음 마일스톤은 12월 1일 UAT 시작이며, 외부 API 연동 지연 가능성이 주요 리스크로 남아 있습니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:51:23.546898Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1946767542,
+        "load_duration": 564958,
+        "prompt_eval_count": 93,
+        "prompt_eval_duration": 117708000,
+        "eval_count": 81,
+        "eval_duration": 1817309000,
+        "message": {
+          "role": "assistant",
+          "content": "프로젝트 X는 3분기 진행 상황이 70% 완료되었으며, 개발 파트는 계획대로 진행 중입니다. 하지만 디자인 파트가 인력 부족으로 인해 2주 지연될 예정입니다. 다음 마일스톤은 12월 1일 UAT 시작이며, 외부 API 연동 지연 가능성이 주요 리스크로 남아 있습니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q3",
+      "category": "정상 사례",
+      "is_cloud_comparison": true,
+      "model": "gemma3:4b",
+      "run": 2,
+      "prompt": "다음 진행 보고서를 요약해줘.\n\n[3분기 진행 보고서] 프로젝트 X는 전체 일정의 70% 완료. 개발 파트는 예정대로 진행 중이나, 디자인 파트는 인력 부족으로 2주 지연 예상. 다음 마일스톤은 12월 1일 UAT 시작. 리스크: 외부 API 연동 지연 가능성 존재.",
+      "response_text": "프로젝트 X는 3분기 진행 상황이 70% 완료되었으며, 개발 파트는 계획대로 진행 중입니다. 하지만 디자인 파트가 인력 부족으로 인해 2주 지연될 예정입니다. 다음 마일스톤은 12월 1일 UAT 시작이며, 외부 API 연동 지연 가능성이 주요 리스크로 남아 있습니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:51:25.422866Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1874059417,
+        "load_duration": 630417,
+        "prompt_eval_count": 93,
+        "prompt_eval_duration": 51230000,
+        "eval_count": 81,
+        "eval_duration": 1821153000,
+        "message": {
+          "role": "assistant",
+          "content": "프로젝트 X는 3분기 진행 상황이 70% 완료되었으며, 개발 파트는 계획대로 진행 중입니다. 하지만 디자인 파트가 인력 부족으로 인해 2주 지연될 예정입니다. 다음 마일스톤은 12월 1일 UAT 시작이며, 외부 API 연동 지연 가능성이 주요 리스크로 남아 있습니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q3",
+      "category": "정상 사례",
+      "is_cloud_comparison": true,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 1,
+      "prompt": "다음 진행 보고서를 요약해줘.\n\n[3분기 진행 보고서] 프로젝트 X는 전체 일정의 70% 완료. 개발 파트는 예정대로 진행 중이나, 디자인 파트는 인력 부족으로 2주 지연 예상. 다음 마일스톤은 12월 1일 UAT 시작. 리스크: 외부 API 연동 지연 가능성 존재.",
+      "response_text": "[3분기 진행 보고서 요약]\n\n프로젝트 X는 전체 일정의 70%를 완료했으며, 개발 파트는 예정대로 진행되고 있습니다. 그러나 디자인 파트는 인력 부족으로 2주 지연이 예상됩니다. 다음 마일스톤은 12월 1일 UAT 시작입니다. 주요 리스크는 외부 API 연동 지연입니다.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:51:27.849722Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2425097208,
+        "load_duration": 551583,
+        "prompt_eval_count": 110,
+        "prompt_eval_duration": 101932000,
+        "eval_count": 101,
+        "eval_duration": 2316667000,
+        "message": {
+          "role": "assistant",
+          "content": "[3분기 진행 보고서 요약]\n\n프로젝트 X는 전체 일정의 70%를 완료했으며, 개발 파트는 예정대로 진행되고 있습니다. 그러나 디자인 파트는 인력 부족으로 2주 지연이 예상됩니다. 다음 마일스톤은 12월 1일 UAT 시작입니다. 주요 리스크는 외부 API 연동 지연입니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q3",
+      "category": "정상 사례",
+      "is_cloud_comparison": true,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 2,
+      "prompt": "다음 진행 보고서를 요약해줘.\n\n[3분기 진행 보고서] 프로젝트 X는 전체 일정의 70% 완료. 개발 파트는 예정대로 진행 중이나, 디자인 파트는 인력 부족으로 2주 지연 예상. 다음 마일스톤은 12월 1일 UAT 시작. 리스크: 외부 API 연동 지연 가능성 존재.",
+      "response_text": "[3분기 진행 보고서 요약]\n\n프로젝트 X는 전체 일정의 70%를 완료했으며, 개발 파트는 예정대로 진행되고 있습니다. 그러나 디자인 파트는 인력 부족으로 2주 지연이 예상됩니다. 다음 마일스톤은 12월 1일 UAT 시작입니다. 주요 리스크는 외부 API 연동 지연입니다.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:51:30.202896Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2352539625,
+        "load_duration": 450250,
+        "prompt_eval_count": 110,
+        "prompt_eval_duration": 23962000,
+        "eval_count": 101,
+        "eval_duration": 2325095000,
+        "message": {
+          "role": "assistant",
+          "content": "[3분기 진행 보고서 요약]\n\n프로젝트 X는 전체 일정의 70%를 완료했으며, 개발 파트는 예정대로 진행되고 있습니다. 그러나 디자인 파트는 인력 부족으로 2주 지연이 예상됩니다. 다음 마일스톤은 12월 1일 UAT 시작입니다. 주요 리스크는 외부 API 연동 지연입니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q4",
+      "category": "경계 사례",
+      "is_cloud_comparison": false,
+      "model": "gemma3:4b",
+      "run": 1,
+      "prompt": "다음 회의록을 요약해줘.\n\n[태스크포스 회의록] A안건 담당 이하늘(9/20 마감), B안건 담당 정우진(9/25 마감), C안건은 담당자 미정 상태로 다음 회의에서 재논의하기로 함. 김수현 부장은 전체 일정을 10/1로 앞당길 것을 요청함.",
+      "response_text": "다음은 회의록 요약입니다.\n\n*   **A안건:** 이하늘 담당, 9월 20일 마감 예정\n*   **B안건:** 정우진 담당, 9월 25일 마감 예정\n*   **C안건:** 담당자 미정, 다음 회의에서 재논의\n*   **일정 조치:** 김수현 부장은 전체 일정을 10월 1일로 앞당길 것을 요청함",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:51:32.692159Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2488427875,
+        "load_duration": 555000,
+        "prompt_eval_count": 101,
+        "prompt_eval_duration": 114714000,
+        "eval_count": 106,
+        "eval_duration": 2366244000,
+        "message": {
+          "role": "assistant",
+          "content": "다음은 회의록 요약입니다.\n\n*   **A안건:** 이하늘 담당, 9월 20일 마감 예정\n*   **B안건:** 정우진 담당, 9월 25일 마감 예정\n*   **C안건:** 담당자 미정, 다음 회의에서 재논의\n*   **일정 조치:** 김수현 부장은 전체 일정을 10월 1일로 앞당길 것을 요청함",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q4",
+      "category": "경계 사례",
+      "is_cloud_comparison": false,
+      "model": "gemma3:4b",
+      "run": 2,
+      "prompt": "다음 회의록을 요약해줘.\n\n[태스크포스 회의록] A안건 담당 이하늘(9/20 마감), B안건 담당 정우진(9/25 마감), C안건은 담당자 미정 상태로 다음 회의에서 재논의하기로 함. 김수현 부장은 전체 일정을 10/1로 앞당길 것을 요청함.",
+      "response_text": "다음은 회의록 요약입니다.\n\n*   **A안건:** 이하늘 담당, 9월 20일 마감 예정\n*   **B안건:** 정우진 담당, 9월 25일 마감 예정\n*   **C안건:** 담당자 미정, 다음 회의에서 재논의\n*   **일정 조치:** 김수현 부장은 전체 일정을 10월 1일로 앞당길 것을 요청함",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:51:35.140686Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2447938500,
+        "load_duration": 544541,
+        "prompt_eval_count": 101,
+        "prompt_eval_duration": 51158000,
+        "eval_count": 106,
+        "eval_duration": 2391810000,
+        "message": {
+          "role": "assistant",
+          "content": "다음은 회의록 요약입니다.\n\n*   **A안건:** 이하늘 담당, 9월 20일 마감 예정\n*   **B안건:** 정우진 담당, 9월 25일 마감 예정\n*   **C안건:** 담당자 미정, 다음 회의에서 재논의\n*   **일정 조치:** 김수현 부장은 전체 일정을 10월 1일로 앞당길 것을 요청함",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q4",
+      "category": "경계 사례",
+      "is_cloud_comparison": false,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 1,
+      "prompt": "다음 회의록을 요약해줘.\n\n[태스크포스 회의록] A안건 담당 이하늘(9/20 마감), B안건 담당 정우진(9/25 마감), C안건은 담당자 미정 상태로 다음 회의에서 재논의하기로 함. 김수현 부장은 전체 일정을 10/1로 앞당길 것을 요청함.",
+      "response_text": "회의록 요약:\n\n- A안건은 이하늘 담당, 9월 20일 마감  \n- B안건은 정우진 담당, 9월 25일 마감  \n- C안건은 담당자 미정으로, 다음 회의에서 재논의  \n- 김수현 부장이 전체 일정을 10월 1일로 앞당길 것을 요청",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:51:37.397776Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2255297625,
+        "load_duration": 551416,
+        "prompt_eval_count": 108,
+        "prompt_eval_duration": 103683000,
+        "eval_count": 96,
+        "eval_duration": 2144105000,
+        "message": {
+          "role": "assistant",
+          "content": "회의록 요약:\n\n- A안건은 이하늘 담당, 9월 20일 마감  \n- B안건은 정우진 담당, 9월 25일 마감  \n- C안건은 담당자 미정으로, 다음 회의에서 재논의  \n- 김수현 부장이 전체 일정을 10월 1일로 앞당길 것을 요청",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q4",
+      "category": "경계 사례",
+      "is_cloud_comparison": false,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 2,
+      "prompt": "다음 회의록을 요약해줘.\n\n[태스크포스 회의록] A안건 담당 이하늘(9/20 마감), B안건 담당 정우진(9/25 마감), C안건은 담당자 미정 상태로 다음 회의에서 재논의하기로 함. 김수현 부장은 전체 일정을 10/1로 앞당길 것을 요청함.",
+      "response_text": "회의록 요약:\n\n- A안건은 이하늘 담당, 9월 20일 마감  \n- B안건은 정우진 담당, 9월 25일 마감  \n- C안건은 담당자 미정으로, 다음 회의에서 재논의  \n- 김수현 부장이 전체 일정을 10월 1일로 앞당길 것을 요청",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:51:39.575792Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2177100625,
+        "load_duration": 508875,
+        "prompt_eval_count": 108,
+        "prompt_eval_duration": 23483000,
+        "eval_count": 96,
+        "eval_duration": 2150102000,
+        "message": {
+          "role": "assistant",
+          "content": "회의록 요약:\n\n- A안건은 이하늘 담당, 9월 20일 마감  \n- B안건은 정우진 담당, 9월 25일 마감  \n- C안건은 담당자 미정으로, 다음 회의에서 재논의  \n- 김수현 부장이 전체 일정을 10월 1일로 앞당길 것을 요청",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q5",
+      "category": "경계 사례",
+      "is_cloud_comparison": true,
+      "model": "gemma3:4b",
+      "run": 1,
+      "prompt": "다음 프로젝트 업데이트를 요약해줘.\n\n[프로젝트 업데이트] 초안에서는 예산이 5천만 원으로 책정되었으나, 회의 중 재무팀 검토 결과 4천 2백만 원으로 하향 조정됨. 최종 승인된 예산은 4천 2백만 원임.",
+      "response_text": "프로젝트 예산이 회의 중 재무팀 검토 결과, 초기 계획인 5천만 원에서 4천 2백만 원으로 최종적으로 조정되었습니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:51:40.587308Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1009925166,
+        "load_duration": 577000,
+        "prompt_eval_count": 82,
+        "prompt_eval_duration": 108857000,
+        "eval_count": 39,
+        "eval_duration": 899363000,
+        "message": {
+          "role": "assistant",
+          "content": "프로젝트 예산이 회의 중 재무팀 검토 결과, 초기 계획인 5천만 원에서 4천 2백만 원으로 최종적으로 조정되었습니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q5",
+      "category": "경계 사례",
+      "is_cloud_comparison": true,
+      "model": "gemma3:4b",
+      "run": 2,
+      "prompt": "다음 프로젝트 업데이트를 요약해줘.\n\n[프로젝트 업데이트] 초안에서는 예산이 5천만 원으로 책정되었으나, 회의 중 재무팀 검토 결과 4천 2백만 원으로 하향 조정됨. 최종 승인된 예산은 4천 2백만 원임.",
+      "response_text": "프로젝트 예산이 회의 중 재무팀 검토 결과, 초기 계획인 5천만 원에서 4천 2백만 원으로 최종적으로 조정되었습니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:51:41.523919Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 934941583,
+        "load_duration": 568333,
+        "prompt_eval_count": 82,
+        "prompt_eval_duration": 51703000,
+        "eval_count": 39,
+        "eval_duration": 881726000,
+        "message": {
+          "role": "assistant",
+          "content": "프로젝트 예산이 회의 중 재무팀 검토 결과, 초기 계획인 5천만 원에서 4천 2백만 원으로 최종적으로 조정되었습니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q5",
+      "category": "경계 사례",
+      "is_cloud_comparison": true,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 1,
+      "prompt": "다음 프로젝트 업데이트를 요약해줘.\n\n[프로젝트 업데이트] 초안에서는 예산이 5천만 원으로 책정되었으나, 회의 중 재무팀 검토 결과 4천 2백만 원으로 하향 조정됨. 최종 승인된 예산은 4천 2백만 원임.",
+      "response_text": "프로젝트 예산은 초안 5천만 원에서 재무팀 검토 후 4천 2백만 원으로 하향 조정되었으며, 이金额가 최종 승인된 예산으로 확정되었습니다.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:51:42.873679Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1348542125,
+        "load_duration": 593083,
+        "prompt_eval_count": 93,
+        "prompt_eval_duration": 99042000,
+        "eval_count": 52,
+        "eval_duration": 1242624000,
+        "message": {
+          "role": "assistant",
+          "content": "프로젝트 예산은 초안 5천만 원에서 재무팀 검토 후 4천 2백만 원으로 하향 조정되었으며, 이金额가 최종 승인된 예산으로 확정되었습니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q5",
+      "category": "경계 사례",
+      "is_cloud_comparison": true,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 2,
+      "prompt": "다음 프로젝트 업데이트를 요약해줘.\n\n[프로젝트 업데이트] 초안에서는 예산이 5천만 원으로 책정되었으나, 회의 중 재무팀 검토 결과 4천 2백만 원으로 하향 조정됨. 최종 승인된 예산은 4천 2백만 원임.",
+      "response_text": "프로젝트 예산은 초안 5천만 원에서 재무팀 검토 후 4천 2백만 원으로 하향 조정되었으며, 이金额가 최종 승인된 예산으로 확정되었습니다.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:51:44.142395Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1267782667,
+        "load_duration": 494917,
+        "prompt_eval_count": 93,
+        "prompt_eval_duration": 25966000,
+        "eval_count": 52,
+        "eval_duration": 1238309000,
+        "message": {
+          "role": "assistant",
+          "content": "프로젝트 예산은 초안 5천만 원에서 재무팀 검토 후 4천 2백만 원으로 하향 조정되었으며, 이金额가 최종 승인된 예산으로 확정되었습니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q6",
+      "category": "경계 사례",
+      "is_cloud_comparison": true,
+      "model": "gemma3:4b",
+      "run": 1,
+      "prompt": "다음 회의록의 결정사항과 액션 아이템을 표(담당자/내용/기한)로 정리해줘.\n\n[주간 회의록] 참석자: 박민수 팀장, 이서연 대리, 최동훈 사원. 신제품 A의 출시일을 11월 15일로 확정. 이서연 대리가 마케팅 자료 초안을 11월 1일까지 작성하기로 함. 최동훈 사원은 협력사 견적서를 다음 주까지 수합. 다음 회의는 10월 20일 예정.",
+      "response_text": "## 주간 회의록 결정사항 및 액션 아이템\n\n| 담당자       | 내용                     | 기한       |\n|--------------|--------------------------|------------|\n| 이서연 대리   | 신제품 A 마케팅 자료 초안 작성 | 11월 1일    |\n| 최동훈 사원 | 협력사 견적서 수합          | 다음 주      |\n| 전체 팀       | 신제품 A 출시일 확정        | 11월 15일   |\n\n---\n\n**참고:** \"다음 주\"는 10월 20일 이후의 주를 의미합니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:51:47.556556Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 3412436959,
+        "load_duration": 495417,
+        "prompt_eval_count": 141,
+        "prompt_eval_duration": 188440000,
+        "eval_count": 139,
+        "eval_duration": 3219095000,
+        "message": {
+          "role": "assistant",
+          "content": "## 주간 회의록 결정사항 및 액션 아이템\n\n| 담당자       | 내용                     | 기한       |\n|--------------|--------------------------|------------|\n| 이서연 대리   | 신제품 A 마케팅 자료 초안 작성 | 11월 1일    |\n| 최동훈 사원 | 협력사 견적서 수합          | 다음 주      |\n| 전체 팀       | 신제품 A 출시일 확정        | 11월 15일   |\n\n---\n\n**참고:** \"다음 주\"는 10월 20일 이후의 주를 의미합니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q6",
+      "category": "경계 사례",
+      "is_cloud_comparison": true,
+      "model": "gemma3:4b",
+      "run": 2,
+      "prompt": "다음 회의록의 결정사항과 액션 아이템을 표(담당자/내용/기한)로 정리해줘.\n\n[주간 회의록] 참석자: 박민수 팀장, 이서연 대리, 최동훈 사원. 신제품 A의 출시일을 11월 15일로 확정. 이서연 대리가 마케팅 자료 초안을 11월 1일까지 작성하기로 함. 최동훈 사원은 협력사 견적서를 다음 주까지 수합. 다음 회의는 10월 20일 예정.",
+      "response_text": "## 주간 회의록 결정사항 및 액션 아이템\n\n| 담당자       | 내용                     | 기한       |\n|--------------|--------------------------|------------|\n| 이서연 대리   | 신제품 A 마케팅 자료 초안 작성 | 11월 1일    |\n| 최동훈 사원 | 협력사 견적서 수합          | 다음 주      |\n| 전체 팀       | 신제품 A 출시일 확정        | 11월 15일   |\n\n---\n\n**참고:** \"다음 주\"는 10월 20일 이후의 주를 의미합니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:51:50.783919Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 3225089000,
+        "load_duration": 499167,
+        "prompt_eval_count": 141,
+        "prompt_eval_duration": 53848000,
+        "eval_count": 139,
+        "eval_duration": 3169845000,
+        "message": {
+          "role": "assistant",
+          "content": "## 주간 회의록 결정사항 및 액션 아이템\n\n| 담당자       | 내용                     | 기한       |\n|--------------|--------------------------|------------|\n| 이서연 대리   | 신제품 A 마케팅 자료 초안 작성 | 11월 1일    |\n| 최동훈 사원 | 협력사 견적서 수합          | 다음 주      |\n| 전체 팀       | 신제품 A 출시일 확정        | 11월 15일   |\n\n---\n\n**참고:** \"다음 주\"는 10월 20일 이후의 주를 의미합니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q6",
+      "category": "경계 사례",
+      "is_cloud_comparison": true,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 1,
+      "prompt": "다음 회의록의 결정사항과 액션 아이템을 표(담당자/내용/기한)로 정리해줘.\n\n[주간 회의록] 참석자: 박민수 팀장, 이서연 대리, 최동훈 사원. 신제품 A의 출시일을 11월 15일로 확정. 이서연 대리가 마케팅 자료 초안을 11월 1일까지 작성하기로 함. 최동훈 사원은 협력사 견적서를 다음 주까지 수합. 다음 회의는 10월 20일 예정.",
+      "response_text": "다음은 주간 회의록의 결정사항과 액션 아이템을 표로 정리한 내용입니다.\n\n| 담당자       | 내용                                 | 기한         |\n|-------------|--------------------------------------|--------------|\n| 박민수 팀장 | 신제품 A의 출시일을 11월 15일로 확정 | 즉시 시행     |\n| 이서연 대리 | 마케팅 자료 초안 작성               | 11월 1일     |\n| 최동훈 사원 | 협력사 견적서 수합                  | 다음 주까지 (예: 10월 20일 이후) |\n| 전체 팀     | 다음 회의 예정                      | 10월 20일    |\n\n> ※ \"다음 주까지\"는 회의 기준으로 10월 20일 이후의 주(예: 10월 27일)를 의미하며, 구체적인 날짜는 참석자들이 다음 주를 정확히 판단해야 합니다.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:51:56.278866Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 5493818209,
+        "load_duration": 502292,
+        "prompt_eval_count": 156,
+        "prompt_eval_duration": 178511000,
+        "eval_count": 232,
+        "eval_duration": 5309152000,
+        "message": {
+          "role": "assistant",
+          "content": "다음은 주간 회의록의 결정사항과 액션 아이템을 표로 정리한 내용입니다.\n\n| 담당자       | 내용                                 | 기한         |\n|-------------|--------------------------------------|--------------|\n| 박민수 팀장 | 신제품 A의 출시일을 11월 15일로 확정 | 즉시 시행     |\n| 이서연 대리 | 마케팅 자료 초안 작성               | 11월 1일     |\n| 최동훈 사원 | 협력사 견적서 수합                  | 다음 주까지 (예: 10월 20일 이후) |\n| 전체 팀     | 다음 회의 예정                      | 10월 20일    |\n\n> ※ \"다음 주까지\"는 회의 기준으로 10월 20일 이후의 주(예: 10월 27일)를 의미하며, 구체적인 날짜는 참석자들이 다음 주를 정확히 판단해야 합니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q6",
+      "category": "경계 사례",
+      "is_cloud_comparison": true,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 2,
+      "prompt": "다음 회의록의 결정사항과 액션 아이템을 표(담당자/내용/기한)로 정리해줘.\n\n[주간 회의록] 참석자: 박민수 팀장, 이서연 대리, 최동훈 사원. 신제품 A의 출시일을 11월 15일로 확정. 이서연 대리가 마케팅 자료 초안을 11월 1일까지 작성하기로 함. 최동훈 사원은 협력사 견적서를 다음 주까지 수합. 다음 회의는 10월 20일 예정.",
+      "response_text": "다음은 주간 회의록의 결정사항과 액션 아이템을 표로 정리한 내용입니다.\n\n| 담당자       | 내용                                 | 기한         |\n|-------------|--------------------------------------|--------------|\n| 박민수 팀장 | 신제품 A의 출시일을 11월 15일로 확정 | 즉시 시행     |\n| 이서연 대리 | 마케팅 자료 초안 작성               | 11월 1일     |\n| 최동훈 사원 | 협력사 견적서 수합                  | 다음 주까지 (예: 10월 20일 이후) |\n| 전체 팀     | 다음 회의 예정                      | 10월 20일    |\n\n> ※ \"다음 주까지\"는 회의 기준으로 10월 20일 이후의 주(예: 10월 27일)를 의미하며, 구체적인 날짜는 참석자들이 다음 주를 정확히 판단해야 합니다.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:52:01.467067Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 5186283334,
+        "load_duration": 623959,
+        "prompt_eval_count": 156,
+        "prompt_eval_duration": 23502000,
+        "eval_count": 232,
+        "eval_duration": 5152379000,
+        "message": {
+          "role": "assistant",
+          "content": "다음은 주간 회의록의 결정사항과 액션 아이템을 표로 정리한 내용입니다.\n\n| 담당자       | 내용                                 | 기한         |\n|-------------|--------------------------------------|--------------|\n| 박민수 팀장 | 신제품 A의 출시일을 11월 15일로 확정 | 즉시 시행     |\n| 이서연 대리 | 마케팅 자료 초안 작성               | 11월 1일     |\n| 최동훈 사원 | 협력사 견적서 수합                  | 다음 주까지 (예: 10월 20일 이후) |\n| 전체 팀     | 다음 회의 예정                      | 10월 20일    |\n\n> ※ \"다음 주까지\"는 회의 기준으로 10월 20일 이후의 주(예: 10월 27일)를 의미하며, 구체적인 날짜는 참석자들이 다음 주를 정확히 판단해야 합니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q7",
+      "category": "경계 사례",
+      "is_cloud_comparison": false,
+      "model": "gemma3:4b",
+      "run": 1,
+      "prompt": "다음 공지사항을 요약해줘.\n\n[공지] 내일 오전 10시 전체 회의 있습니다.",
+      "response_text": "내일 오전 10시에 전체 회의가 있습니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:52:01.874019Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 405148750,
+        "load_duration": 603208,
+        "prompt_eval_count": 37,
+        "prompt_eval_duration": 104141000,
+        "eval_count": 14,
+        "eval_duration": 289929000,
+        "message": {
+          "role": "assistant",
+          "content": "내일 오전 10시에 전체 회의가 있습니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q7",
+      "category": "경계 사례",
+      "is_cloud_comparison": false,
+      "model": "gemma3:4b",
+      "run": 2,
+      "prompt": "다음 공지사항을 요약해줘.\n\n[공지] 내일 오전 10시 전체 회의 있습니다.",
+      "response_text": "내일 오전 10시에 전체 회의가 있습니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:52:02.217614Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 341823208,
+        "load_duration": 643916,
+        "prompt_eval_count": 37,
+        "prompt_eval_duration": 50207000,
+        "eval_count": 14,
+        "eval_duration": 290067000,
+        "message": {
+          "role": "assistant",
+          "content": "내일 오전 10시에 전체 회의가 있습니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q7",
+      "category": "경계 사례",
+      "is_cloud_comparison": false,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 1,
+      "prompt": "다음 공지사항을 요약해줘.\n\n[공지] 내일 오전 10시 전체 회의 있습니다.",
+      "response_text": "내일 오전 10시 전체 회의가 있습니다.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:52:02.612233Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 392818666,
+        "load_duration": 593375,
+        "prompt_eval_count": 36,
+        "prompt_eval_duration": 81817000,
+        "eval_count": 15,
+        "eval_duration": 307245000,
+        "message": {
+          "role": "assistant",
+          "content": "내일 오전 10시 전체 회의가 있습니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q7",
+      "category": "경계 사례",
+      "is_cloud_comparison": false,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 2,
+      "prompt": "다음 공지사항을 요약해줘.\n\n[공지] 내일 오전 10시 전체 회의 있습니다.",
+      "response_text": "내일 오전 10시 전체 회의가 있습니다.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:52:02.947937Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 333937792,
+        "load_duration": 512542,
+        "prompt_eval_count": 36,
+        "prompt_eval_duration": 23423000,
+        "eval_count": 15,
+        "eval_duration": 307028000,
+        "message": {
+          "role": "assistant",
+          "content": "내일 오전 10시 전체 회의가 있습니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q8",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": false,
+      "model": "gemma3:4b",
+      "run": 1,
+      "prompt": "다음 회의록에서 논의된 예산 규모를 알려줘.\n\n[주간 회의록] 참석자: 박민수 팀장, 이서연 대리, 최동훈 사원. 신제품 A의 출시일을 11월 15일로 확정. 이서연 대리가 마케팅 자료 초안을 11월 1일까지 작성하기로 함. 최동훈 사원은 협력사 견적서를 다음 주까지 수합. 다음 회의는 10월 20일 예정.",
+      "response_text": "이 회의록에는 구체적인 예산 규모에 대한 언급은 없습니다. 다만, 신제품 A 출시와 관련된 마케팅 자료 작성 및 협력사 견적서 수합 등의 업무가 논의된 것으로 확인됩니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:52:04.164958Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1215263958,
+        "load_duration": 572958,
+        "prompt_eval_count": 127,
+        "prompt_eval_duration": 119821000,
+        "eval_count": 50,
+        "eval_duration": 1092301000,
+        "message": {
+          "role": "assistant",
+          "content": "이 회의록에는 구체적인 예산 규모에 대한 언급은 없습니다. 다만, 신제품 A 출시와 관련된 마케팅 자료 작성 및 협력사 견적서 수합 등의 업무가 논의된 것으로 확인됩니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q8",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": false,
+      "model": "gemma3:4b",
+      "run": 2,
+      "prompt": "다음 회의록에서 논의된 예산 규모를 알려줘.\n\n[주간 회의록] 참석자: 박민수 팀장, 이서연 대리, 최동훈 사원. 신제품 A의 출시일을 11월 15일로 확정. 이서연 대리가 마케팅 자료 초안을 11월 1일까지 작성하기로 함. 최동훈 사원은 협력사 견적서를 다음 주까지 수합. 다음 회의는 10월 20일 예정.",
+      "response_text": "이 회의록에는 구체적인 예산 규모에 대한 언급은 없습니다. 다만, 신제품 A 출시와 관련된 마케팅 자료 작성 및 협력사 견적서 수합 등의 업무가 논의된 것으로 확인됩니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:52:05.313185Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1146848208,
+        "load_duration": 448375,
+        "prompt_eval_count": 127,
+        "prompt_eval_duration": 51992000,
+        "eval_count": 50,
+        "eval_duration": 1093447000,
+        "message": {
+          "role": "assistant",
+          "content": "이 회의록에는 구체적인 예산 규모에 대한 언급은 없습니다. 다만, 신제품 A 출시와 관련된 마케팅 자료 작성 및 협력사 견적서 수합 등의 업무가 논의된 것으로 확인됩니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q8",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": false,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 1,
+      "prompt": "다음 회의록에서 논의된 예산 규모를 알려줘.\n\n[주간 회의록] 참석자: 박민수 팀장, 이서연 대리, 최동훈 사원. 신제품 A의 출시일을 11월 15일로 확정. 이서연 대리가 마케팅 자료 초안을 11월 1일까지 작성하기로 함. 최동훈 사원은 협력사 견적서를 다음 주까지 수합. 다음 회의는 10월 20일 예정.",
+      "response_text": "주어진 회의록에는 **예산 규모**에 대한 언급이 없습니다.\n\n논의된 내용은 다음과 같습니다:\n- 신제품 A의 출시일: 11월 15일\n- 마케팅 자료 초안 제출 기한: 11월 1일\n- 협력사 견적서 수합 기한: 다음 주까지\n- 다음 회의일: 10월 20일\n\n이러한 내용들은 일정과 책임 분담에 관한 것이며, **예산 규모**는 전혀 언급되어 있지 않습니다.\n\n👉 따라서, 회의록에서 논의된 예산 규모는 **없습니다**.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:52:08.875154Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 3561377542,
+        "load_duration": 516084,
+        "prompt_eval_count": 141,
+        "prompt_eval_duration": 175172000,
+        "eval_count": 153,
+        "eval_duration": 3381706000,
+        "message": {
+          "role": "assistant",
+          "content": "주어진 회의록에는 **예산 규모**에 대한 언급이 없습니다.\n\n논의된 내용은 다음과 같습니다:\n- 신제품 A의 출시일: 11월 15일\n- 마케팅 자료 초안 제출 기한: 11월 1일\n- 협력사 견적서 수합 기한: 다음 주까지\n- 다음 회의일: 10월 20일\n\n이러한 내용들은 일정과 책임 분담에 관한 것이며, **예산 규모**는 전혀 언급되어 있지 않습니다.\n\n👉 따라서, 회의록에서 논의된 예산 규모는 **없습니다**.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q8",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": false,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 2,
+      "prompt": "다음 회의록에서 논의된 예산 규모를 알려줘.\n\n[주간 회의록] 참석자: 박민수 팀장, 이서연 대리, 최동훈 사원. 신제품 A의 출시일을 11월 15일로 확정. 이서연 대리가 마케팅 자료 초안을 11월 1일까지 작성하기로 함. 최동훈 사원은 협력사 견적서를 다음 주까지 수합. 다음 회의는 10월 20일 예정.",
+      "response_text": "주어진 회의록에는 **예산 규모**에 대한 언급이 없습니다.\n\n논의된 내용은 다음과 같습니다:\n- 신제품 A의 출시일: 11월 15일\n- 마케팅 자료 초안 제출 기한: 11월 1일\n- 협력사 견적서 수합 기한: 다음 주까지\n- 다음 회의일: 10월 20일\n\n이러한 내용들은 일정과 책임 분담에 관한 것이며, **예산 규모**는 전혀 언급되어 있지 않습니다.\n\n👉 따라서, 회의록에서 논의된 예산 규모는 **없습니다**.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:52:12.291041Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 3414415250,
+        "load_duration": 566875,
+        "prompt_eval_count": 141,
+        "prompt_eval_duration": 24575000,
+        "eval_count": 153,
+        "eval_duration": 3379402000,
+        "message": {
+          "role": "assistant",
+          "content": "주어진 회의록에는 **예산 규모**에 대한 언급이 없습니다.\n\n논의된 내용은 다음과 같습니다:\n- 신제품 A의 출시일: 11월 15일\n- 마케팅 자료 초안 제출 기한: 11월 1일\n- 협력사 견적서 수합 기한: 다음 주까지\n- 다음 회의일: 10월 20일\n\n이러한 내용들은 일정과 책임 분담에 관한 것이며, **예산 규모**는 전혀 언급되어 있지 않습니다.\n\n👉 따라서, 회의록에서 논의된 예산 규모는 **없습니다**.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q9",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": true,
+      "model": "gemma3:4b",
+      "run": 1,
+      "prompt": "다음 보고서에서, 경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\n\n[3분기 진행 보고서] 프로젝트 X는 전체 일정의 70% 완료. 개발 파트는 예정대로 진행 중이나, 디자인 파트는 인력 부족으로 2주 지연 예상. 다음 마일스톤은 12월 1일 UAT 시작. 리스크: 외부 API 연동 지연 가능성 존재.",
+      "response_text": "제공된 보고서에는 경쟁사 대응에 대한 정보가 명시적으로 언급되어 있지 않습니다. 보고서는 프로젝트 X의 진행 상황과 관련된 정보만 담고 있습니다. \n\n보고서에서 알 수 있는 점은 다음과 같습니다.\n\n*   **디자인 파트의 지연:** 디자인 파트가 인력 부족으로 2주 지연될 가능성이 있어, 경쟁사들이 유사한 디자인 작업을 더 빠르게 완료하고 있을 가능성이 있습니다.\n*   **외부 API 연동 지연 리스크:** 외부 API 연동 지연은 프로젝트 전체 일정에 영향을 미칠 수 있으며, 경쟁사들이 API 연동을 더 효율적으로 처리하고 있을 가능성이 있습니다.\n\n**경쟁사 대응에 대한 추가 정보를 얻기 위해서는** 보고서 외에 다른 자료(시장 조사 보고서, 경쟁사 웹사이트, 뉴스 기사 등)를 참고해야 합니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:52:16.501949Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 4210063417,
+        "load_duration": 578042,
+        "prompt_eval_count": 99,
+        "prompt_eval_duration": 113643000,
+        "eval_count": 184,
+        "eval_duration": 4086514000,
+        "message": {
+          "role": "assistant",
+          "content": "제공된 보고서에는 경쟁사 대응에 대한 정보가 명시적으로 언급되어 있지 않습니다. 보고서는 프로젝트 X의 진행 상황과 관련된 정보만 담고 있습니다. \n\n보고서에서 알 수 있는 점은 다음과 같습니다.\n\n*   **디자인 파트의 지연:** 디자인 파트가 인력 부족으로 2주 지연될 가능성이 있어, 경쟁사들이 유사한 디자인 작업을 더 빠르게 완료하고 있을 가능성이 있습니다.\n*   **외부 API 연동 지연 리스크:** 외부 API 연동 지연은 프로젝트 전체 일정에 영향을 미칠 수 있으며, 경쟁사들이 API 연동을 더 효율적으로 처리하고 있을 가능성이 있습니다.\n\n**경쟁사 대응에 대한 추가 정보를 얻기 위해서는** 보고서 외에 다른 자료(시장 조사 보고서, 경쟁사 웹사이트, 뉴스 기사 등)를 참고해야 합니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q9",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": true,
+      "model": "gemma3:4b",
+      "run": 2,
+      "prompt": "다음 보고서에서, 경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\n\n[3분기 진행 보고서] 프로젝트 X는 전체 일정의 70% 완료. 개발 파트는 예정대로 진행 중이나, 디자인 파트는 인력 부족으로 2주 지연 예상. 다음 마일스톤은 12월 1일 UAT 시작. 리스크: 외부 API 연동 지연 가능성 존재.",
+      "response_text": "제공된 보고서에는 경쟁사 대응에 대한 정보가 명시적으로 언급되어 있지 않습니다. 보고서는 프로젝트 X의 진행 상황과 관련된 정보만 담고 있습니다. \n\n보고서에서 알 수 있는 점은 다음과 같습니다.\n\n*   **디자인 파트의 지연:** 디자인 파트가 인력 부족으로 2주 지연될 가능성이 있어, 경쟁사들이 유사한 디자인 작업을 더 빠르게 완료하고 있을 가능성이 있습니다.\n*   **외부 API 연동 지연 리스크:** 외부 API 연동 지연은 프로젝트 전체 일정에 영향을 미칠 수 있으며, 경쟁사들이 API 연동을 더 효율적으로 처리하고 있을 가능성이 있습니다.\n\n**경쟁사 대응에 대한 추가 정보를 얻기 위해서는** 보고서 외에 다른 자료(시장 조사 보고서, 경쟁사 웹사이트, 뉴스 기사 등)를 참고해야 합니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:52:20.762773Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 4259033500,
+        "load_duration": 657334,
+        "prompt_eval_count": 99,
+        "prompt_eval_duration": 51481000,
+        "eval_count": 184,
+        "eval_duration": 4200929000,
+        "message": {
+          "role": "assistant",
+          "content": "제공된 보고서에는 경쟁사 대응에 대한 정보가 명시적으로 언급되어 있지 않습니다. 보고서는 프로젝트 X의 진행 상황과 관련된 정보만 담고 있습니다. \n\n보고서에서 알 수 있는 점은 다음과 같습니다.\n\n*   **디자인 파트의 지연:** 디자인 파트가 인력 부족으로 2주 지연될 가능성이 있어, 경쟁사들이 유사한 디자인 작업을 더 빠르게 완료하고 있을 가능성이 있습니다.\n*   **외부 API 연동 지연 리스크:** 외부 API 연동 지연은 프로젝트 전체 일정에 영향을 미칠 수 있으며, 경쟁사들이 API 연동을 더 효율적으로 처리하고 있을 가능성이 있습니다.\n\n**경쟁사 대응에 대한 추가 정보를 얻기 위해서는** 보고서 외에 다른 자료(시장 조사 보고서, 경쟁사 웹사이트, 뉴스 기사 등)를 참고해야 합니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q9",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": true,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 1,
+      "prompt": "다음 보고서에서, 경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\n\n[3분기 진행 보고서] 프로젝트 X는 전체 일정의 70% 완료. 개발 파트는 예정대로 진행 중이나, 디자인 파트는 인력 부족으로 2주 지연 예상. 다음 마일스톤은 12월 1일 UAT 시작. 리스크: 외부 API 연동 지연 가능성 존재.",
+      "response_text": "주어진 보고서에서 **경쟁사가 이 프로젝트에 어떻게 대응하고 있는지**에 대한 정보는 **직접적으로 언급되어 있지 않습니다**.\n\n보고서는 프로젝트 X의 내부 진행 상황(개발 및 디자인 파트의 진행 상태, 마일스톤, 리스크 등)을 설명하고 있지만, **경쟁사의 행동이나 반응**에 대한 내용은 전혀 포함되어 있지 않습니다.\n\n따라서, 이 보고서를 기반으로 **경쟁사가 어떻게 대응하고 있는지**를 판단할 수는 없습니다.\n\n✅ 결론:  \n**보고서 내용에서 경쟁사의 대응 방식은 명시되어 있지 않으며, 해당 정보는 제공되지 않았습니다.**  \n→ 따라서 \"경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\"에 대한 답변은 **불가능합니다**.\n\n> 💡 보완 제안: 만약 이 질문이 전략적 분석을 위한 것이면, 추가 정보(예: 시장 동향, 경쟁사의 발표, 제품 출시 일정 등)이 필요합니다. 현재 보고서는 내부",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:52:26.534489Z",
+        "done": true,
+        "done_reason": "length",
+        "total_duration": 5771123833,
+        "load_duration": 517167,
+        "prompt_eval_count": 120,
+        "prompt_eval_duration": 105498000,
+        "eval_count": 256,
+        "eval_duration": 5661924000,
+        "message": {
+          "role": "assistant",
+          "content": "주어진 보고서에서 **경쟁사가 이 프로젝트에 어떻게 대응하고 있는지**에 대한 정보는 **직접적으로 언급되어 있지 않습니다**.\n\n보고서는 프로젝트 X의 내부 진행 상황(개발 및 디자인 파트의 진행 상태, 마일스톤, 리스크 등)을 설명하고 있지만, **경쟁사의 행동이나 반응**에 대한 내용은 전혀 포함되어 있지 않습니다.\n\n따라서, 이 보고서를 기반으로 **경쟁사가 어떻게 대응하고 있는지**를 판단할 수는 없습니다.\n\n✅ 결론:  \n**보고서 내용에서 경쟁사의 대응 방식은 명시되어 있지 않으며, 해당 정보는 제공되지 않았습니다.**  \n→ 따라서 \"경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\"에 대한 답변은 **불가능합니다**.\n\n> 💡 보완 제안: 만약 이 질문이 전략적 분석을 위한 것이면, 추가 정보(예: 시장 동향, 경쟁사의 발표, 제품 출시 일정 등)이 필요합니다. 현재 보고서는 내부",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q9",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": true,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 2,
+      "prompt": "다음 보고서에서, 경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\n\n[3분기 진행 보고서] 프로젝트 X는 전체 일정의 70% 완료. 개발 파트는 예정대로 진행 중이나, 디자인 파트는 인력 부족으로 2주 지연 예상. 다음 마일스톤은 12월 1일 UAT 시작. 리스크: 외부 API 연동 지연 가능성 존재.",
+      "response_text": "주어진 보고서에서 **경쟁사가 이 프로젝트에 어떻게 대응하고 있는지**에 대한 정보는 **직접적으로 언급되어 있지 않습니다**.\n\n보고서는 프로젝트 X의 내부 진행 상황(개발 및 디자인 파트의 진행 상태, 마일스톤, 리스크 등)을 설명하고 있지만, **경쟁사의 행동이나 반응**에 대한 내용은 전혀 포함되어 있지 않습니다.\n\n따라서, 이 보고서를 기반으로 **경쟁사가 어떻게 대응하고 있는지**를 판단할 수는 없습니다.\n\n✅ 결론:  \n**보고서 내용에서 경쟁사의 대응 방식은 명시되어 있지 않으며, 해당 정보는 제공되지 않았습니다.**  \n→ 따라서 \"경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\"에 대한 답변은 **불가능합니다**.\n\n> 💡 보완 제안: 만약 이 질문이 전략적 분석을 위한 것이면, 추가 정보(예: 시장 동향, 경쟁사의 발표, 제품 출시 일정 등)이 필요합니다. 현재 보고서는 내부",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:52:32.458558Z",
+        "done": true,
+        "done_reason": "length",
+        "total_duration": 5922177500,
+        "load_duration": 608750,
+        "prompt_eval_count": 120,
+        "prompt_eval_duration": 24968000,
+        "eval_count": 256,
+        "eval_duration": 5887325000,
+        "message": {
+          "role": "assistant",
+          "content": "주어진 보고서에서 **경쟁사가 이 프로젝트에 어떻게 대응하고 있는지**에 대한 정보는 **직접적으로 언급되어 있지 않습니다**.\n\n보고서는 프로젝트 X의 내부 진행 상황(개발 및 디자인 파트의 진행 상태, 마일스톤, 리스크 등)을 설명하고 있지만, **경쟁사의 행동이나 반응**에 대한 내용은 전혀 포함되어 있지 않습니다.\n\n따라서, 이 보고서를 기반으로 **경쟁사가 어떻게 대응하고 있는지**를 판단할 수는 없습니다.\n\n✅ 결론:  \n**보고서 내용에서 경쟁사의 대응 방식은 명시되어 있지 않으며, 해당 정보는 제공되지 않았습니다.**  \n→ 따라서 \"경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\"에 대한 답변은 **불가능합니다**.\n\n> 💡 보완 제안: 만약 이 질문이 전략적 분석을 위한 것이면, 추가 정보(예: 시장 동향, 경쟁사의 발표, 제품 출시 일정 등)이 필요합니다. 현재 보고서는 내부",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q10",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": false,
+      "model": "gemma3:4b",
+      "run": 1,
+      "prompt": "이 공지의 신청서 양식(파일 형식)이 뭐야?\n\n[사내 공지] 2026년 10월부터 재택근무 신청 절차가 변경됩니다. 기존에는 팀장 승인만 필요했으나, 앞으로는 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서는 매주 목요일까지 제출해야 다음 주 반영이 가능합니다. 문의는 인사팀 내선 1234로 부탁드립니다.",
+      "response_text": "제공된 공지에는 신청서 양식의 파일 형식에 대한 정보가 포함되어 있지 않습니다. \n\n공지 내용만으로는 신청서 파일 형식을 알 수 없습니다. \n\n**신청서 양식 파일 형식은 회사 내부 시스템이나 인사팀에 문의하여 확인해야 합니다.**\n",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:52:34.174969Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1714598500,
+        "load_duration": 622000,
+        "prompt_eval_count": 116,
+        "prompt_eval_duration": 209149000,
+        "eval_count": 64,
+        "eval_duration": 1503675000,
+        "message": {
+          "role": "assistant",
+          "content": "제공된 공지에는 신청서 양식의 파일 형식에 대한 정보가 포함되어 있지 않습니다. \n\n공지 내용만으로는 신청서 파일 형식을 알 수 없습니다. \n\n**신청서 양식 파일 형식은 회사 내부 시스템이나 인사팀에 문의하여 확인해야 합니다.**\n",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q10",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": false,
+      "model": "gemma3:4b",
+      "run": 2,
+      "prompt": "이 공지의 신청서 양식(파일 형식)이 뭐야?\n\n[사내 공지] 2026년 10월부터 재택근무 신청 절차가 변경됩니다. 기존에는 팀장 승인만 필요했으나, 앞으로는 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서는 매주 목요일까지 제출해야 다음 주 반영이 가능합니다. 문의는 인사팀 내선 1234로 부탁드립니다.",
+      "response_text": "제공된 공지에는 신청서 양식의 파일 형식에 대한 정보가 포함되어 있지 않습니다. \n\n공지 내용만으로는 신청서 파일 형식을 알 수 없습니다. \n\n**신청서 양식 파일 형식은 회사 내부 시스템이나 인사팀에 문의하여 확인해야 합니다.**\n",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-15T08:52:35.691411Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1515158500,
+        "load_duration": 538375,
+        "prompt_eval_count": 116,
+        "prompt_eval_duration": 51401000,
+        "eval_count": 64,
+        "eval_duration": 1462350000,
+        "message": {
+          "role": "assistant",
+          "content": "제공된 공지에는 신청서 양식의 파일 형식에 대한 정보가 포함되어 있지 않습니다. \n\n공지 내용만으로는 신청서 파일 형식을 알 수 없습니다. \n\n**신청서 양식 파일 형식은 회사 내부 시스템이나 인사팀에 문의하여 확인해야 합니다.**\n",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q10",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": false,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 1,
+      "prompt": "이 공지의 신청서 양식(파일 형식)이 뭐야?\n\n[사내 공지] 2026년 10월부터 재택근무 신청 절차가 변경됩니다. 기존에는 팀장 승인만 필요했으나, 앞으로는 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서는 매주 목요일까지 제출해야 다음 주 반영이 가능합니다. 문의는 인사팀 내선 1234로 부탁드립니다.",
+      "response_text": "이 공지 내용에서 언급된 **\"신청서 양식(파일 형식)\"** 에 대해 명확히 언급되어 있지 않습니다.\n\n즉, 공지문은 다음과 같은 내용을 담고 있습니다:\n\n- 재택근무 신청 절차가 변경됨  \n- 팀장 승인 후 인사팀(김지원 대리)에게 신청서 제출 필요  \n- 제출 기한: 매주 목요일까지  \n- 문의처: 인사팀 내선 1234  \n\n하지만 **신청서의 파일 형식**(예: PDF, Word, Excel 등)이나 **어떤 파일 형식으로 제공되는지**에 대해서는 **어떤 정보도 포함되어 있지 않습니다**.\n\n---\n\n✅ 결론:\n\n> 이 공지문에서 **신청서의 파일 형식**은 **명시되어 있지 않습니다**.  \n> 따라서, \"신청서 양식(파일 형식)\"이 무엇인지 알 수 없습니다.\n\n---\n\n💡 추천 답변 (실제 상황에 맞게 사용 가능):\n\n> 본 공지에서는 재택근무 신청 절차의 변경 사항을 안내하고 있으나, 신청서",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:52:41.594782Z",
+        "done": true,
+        "done_reason": "length",
+        "total_duration": 5902736417,
+        "load_duration": 517167,
+        "prompt_eval_count": 141,
+        "prompt_eval_duration": 178347000,
+        "eval_count": 256,
+        "eval_duration": 5720013000,
+        "message": {
+          "role": "assistant",
+          "content": "이 공지 내용에서 언급된 **\"신청서 양식(파일 형식)\"** 에 대해 명확히 언급되어 있지 않습니다.\n\n즉, 공지문은 다음과 같은 내용을 담고 있습니다:\n\n- 재택근무 신청 절차가 변경됨  \n- 팀장 승인 후 인사팀(김지원 대리)에게 신청서 제출 필요  \n- 제출 기한: 매주 목요일까지  \n- 문의처: 인사팀 내선 1234  \n\n하지만 **신청서의 파일 형식**(예: PDF, Word, Excel 등)이나 **어떤 파일 형식으로 제공되는지**에 대해서는 **어떤 정보도 포함되어 있지 않습니다**.\n\n---\n\n✅ 결론:\n\n> 이 공지문에서 **신청서의 파일 형식**은 **명시되어 있지 않습니다**.  \n> 따라서, \"신청서 양식(파일 형식)\"이 무엇인지 알 수 없습니다.\n\n---\n\n💡 추천 답변 (실제 상황에 맞게 사용 가능):\n\n> 본 공지에서는 재택근무 신청 절차의 변경 사항을 안내하고 있으나, 신청서",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    },
+    {
+      "question_id": "Q10",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": false,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 2,
+      "prompt": "이 공지의 신청서 양식(파일 형식)이 뭐야?\n\n[사내 공지] 2026년 10월부터 재택근무 신청 절차가 변경됩니다. 기존에는 팀장 승인만 필요했으나, 앞으로는 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서는 매주 목요일까지 제출해야 다음 주 반영이 가능합니다. 문의는 인사팀 내선 1234로 부탁드립니다.",
+      "response_text": "이 공지 내용에서 언급된 **\"신청서 양식(파일 형식)\"** 에 대해 명확히 언급되어 있지 않습니다.\n\n즉, 공지문은 다음과 같은 내용을 담고 있습니다:\n\n- 재택근무 신청 절차가 변경됨  \n- 팀장 승인 후 인사팀(김지원 대리)에게 신청서 제출 필요  \n- 제출 기한: 매주 목요일까지  \n- 문의처: 인사팀 내선 1234  \n\n하지만 **신청서의 파일 형식**(예: PDF, Word, Excel 등)이나 **어떤 파일 형식으로 제공되는지**에 대해서는 **어떤 정보도 포함되어 있지 않습니다**.\n\n---\n\n✅ 결론:\n\n> 이 공지문에서 **신청서의 파일 형식**은 **명시되어 있지 않습니다**.  \n> 따라서, \"신청서 양식(파일 형식)\"이 무엇인지 알 수 없습니다.\n\n---\n\n💡 추천 답변 (실제 상황에 맞게 사용 가능):\n\n> 본 공지에서는 재택근무 신청 절차의 변경 사항을 안내하고 있으나, 신청서",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-15T08:52:47.342455Z",
+        "done": true,
+        "done_reason": "length",
+        "total_duration": 5745892459,
+        "load_duration": 584375,
+        "prompt_eval_count": 141,
+        "prompt_eval_duration": 24415000,
+        "eval_count": 256,
+        "eval_duration": 5712793000,
+        "message": {
+          "role": "assistant",
+          "content": "이 공지 내용에서 언급된 **\"신청서 양식(파일 형식)\"** 에 대해 명확히 언급되어 있지 않습니다.\n\n즉, 공지문은 다음과 같은 내용을 담고 있습니다:\n\n- 재택근무 신청 절차가 변경됨  \n- 팀장 승인 후 인사팀(김지원 대리)에게 신청서 제출 필요  \n- 제출 기한: 매주 목요일까지  \n- 문의처: 인사팀 내선 1234  \n\n하지만 **신청서의 파일 형식**(예: PDF, Word, Excel 등)이나 **어떤 파일 형식으로 제공되는지**에 대해서는 **어떤 정보도 포함되어 있지 않습니다**.\n\n---\n\n✅ 결론:\n\n> 이 공지문에서 **신청서의 파일 형식**은 **명시되어 있지 않습니다**.  \n> 따라서, \"신청서 양식(파일 형식)\"이 무엇인지 알 수 없습니다.\n\n---\n\n💡 추천 답변 (실제 상황에 맞게 사용 가능):\n\n> 본 공지에서는 재택근무 신청 절차의 변경 사항을 안내하고 있으나, 신청서",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      }
+    }
+  ]
+}
