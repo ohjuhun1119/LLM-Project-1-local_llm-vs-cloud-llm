@@ -11,6 +11,45 @@
 - **flowchart**: [docs/04-flowchart.md](docs/04-flowchart.md)
 - **평가 질문 및 채점 기준**:[docs/05-eval-questions.md](docs/05-eval-questions.md)
 
+## 개발 환경 설정
+
+### Python 라이브러리 설치
+
+```bash
+pip install ollama requests
+```
+
+### VS Code 파이썬 인터프리터 설정
+
+이 프로젝트는 Anaconda(conda) 환경을 사용합니다. `import ollama`에 
+노란 경고 줄이 뜨는 경우, VS Code가 다른 파이썬 환경을 보고 있는 것이니 
+아래처럼 인터프리터를 맞춰주세요.
+
+1. `Cmd + Shift + P` → `Python: Select Interpreter` 검색
+2. Anaconda 환경(`base` 또는 `conda`가 포함된 항목) 선택
+3. 하단 상태바에 선택된 파이썬 환경이 표시되는지 확인
+
+이 설정은 `.vscode/settings.json`에 자동 저장되며, 프로젝트에 포함되어 
+git으로 함께 관리됩니다.
+
+**`.vscode/settings.json`**
+```json
+{
+    "editor.suggest.selectionMode": "never",
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda"
+}
+```
+
+### Ollama 서버 확인
+
+스크립트 실행 전, Ollama 앱이 켜져 있고 서버가 응답하는지 확인합니다.
+
+```bash
+ollama -v        # 버전 확인
+ollama list       # 설치된 모델 목록 확인
+```
+
 ## 실행 방법
 ### 1. ollama 모델 다운로드
 ```bash
@@ -47,6 +86,6 @@ python src/01_check_environment.py
 - [x] 후보 모델 리서치
 - [x] 평가 질문 설계
 - [x] 실행 환경 준비
-- [ ] 로컬 모델 비교 실험
+- [x] 로컬 모델 비교 실험
 - [ ] Cloud API 소규모 비교
 - [ ] 최종 모델 선정 및 보고서 작성
