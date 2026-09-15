@@ -13,23 +13,23 @@
 
 ## 실행 방법
 ### 1. ollama 모델 다운로드
-\```bash
+```bash
 ollama pull gemma3:4b
 ollama pull qwen3:4b-instruct-2507-q4_K_M
-\```
+```
 
 ### 2. Python 라이브러리 설치
-\```bash
+```bash
 pip install ollama
-\```
+```
 
 ### 3. 실행 환경 확인
 
 두 후보 모델에 동일한 질문(Q1)을 보내고, 기본 응답 / ollama 버전 / 장비 정보 / 생성 설정 / 원본 응답을 'results/environment_check_log.json'에 기록합니다.
 
-\```bash
+```bash
 python src/01_check_environment.py
-\```
+```
 
 **확인사항**:
 - 두 모델이 정상적으로 응답하는지
@@ -38,7 +38,7 @@ python src/01_check_environment.py
     - 'device_info' : 설치된 ollama 버전
     - 'generation_settings' : temperature, num_predict 생성 설정
     - 'results' : 각 모델의 응답 텍스트 및 원본 응답
-    
+
 ## 작업 순서
 
 - [x] 문제 정의
