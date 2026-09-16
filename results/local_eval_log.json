@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-15T08:51:00.357728+00:00",
+  "timestamp": "2026-09-16T01:49:03.185615+00:00",
   "ollama_version": "ollama version is 0.34.0",
   "device_info": {
     "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
@@ -11,21 +11,51 @@
     "num_predict": 256
   },
   "runs_per_question": 2,
+  "model_details": {
+    "gemma3:4b": {
+      "digest": "a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma3",
+        "families": [
+          "gemma3"
+        ],
+        "parameter_size": "4.3B",
+        "quantization_level": "Q4_K_M"
+      },
+      "context_length": 131072
+    },
+    "qwen3:4b-instruct-2507-q4_K_M": {
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "4.0B",
+        "quantization_level": "Q4_K_M"
+      },
+      "context_length": 262144
+    }
+  },
   "warmup": [
     {
       "model": "gemma3:4b",
       "response_text": "안녕하세요! 무엇을 도와드릴까요? 궁금한 점이 있거나, 필요한 정보가 있다면 언제든지 말씀해주세요. 😊\n",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:51:02.914894Z",
+        "created_at": "2026-09-16T01:49:04.09222Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 2524601083,
-        "load_duration": 1824114958,
+        "total_duration": 642442500,
+        "load_duration": 561667,
         "prompt_eval_count": 12,
-        "prompt_eval_duration": 76959000,
+        "prompt_eval_duration": 58512000,
         "eval_count": 27,
-        "eval_duration": 622383000,
+        "eval_duration": 576920000,
         "message": {
           "role": "assistant",
           "content": "안녕하세요! 무엇을 도와드릴까요? 궁금한 점이 있거나, 필요한 정보가 있다면 언제든지 말씀해주세요. 😊\n",
@@ -35,6 +65,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 0.644,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 46.8,
+        "eval_count": 27,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -42,15 +83,15 @@
       "response_text": "안녕하세요! 😊 어떻게 도와드릴까요?",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:51:04.870384Z",
+        "created_at": "2026-09-16T01:49:04.410031Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 1953355542,
-        "load_duration": 1547489292,
+        "total_duration": 315010041,
+        "load_duration": 580791,
         "prompt_eval_count": 12,
-        "prompt_eval_duration": 100357000,
+        "prompt_eval_duration": 25063000,
         "eval_count": 14,
-        "eval_duration": 300846000,
+        "eval_duration": 285604000,
         "message": {
           "role": "assistant",
           "content": "안녕하세요! 😊 어떻게 도와드릴까요?",
@@ -60,6 +101,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 0.317,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 49.02,
+        "eval_count": 14,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     }
   ],
@@ -74,15 +126,15 @@
       "response_text": "2026년 10월부터 재택근무 신청 시 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서 제출 마감은 매주 목요일이며, 문의는 인사팀 내선 1234로 문의해주세요.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:51:06.497923Z",
+        "created_at": "2026-09-16T01:49:05.876288Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 1626707750,
-        "load_duration": 557084,
+        "total_duration": 1463088208,
+        "load_duration": 550500,
         "prompt_eval_count": 112,
-        "prompt_eval_duration": 123359000,
+        "prompt_eval_duration": 54940000,
         "eval_count": 64,
-        "eval_duration": 1499994000,
+        "eval_duration": 1402091000,
         "message": {
           "role": "assistant",
           "content": "2026년 10월부터 재택근무 신청 시 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서 제출 마감은 매주 목요일이며, 문의는 인사팀 내선 1234로 문의해주세요.",
@@ -92,6 +144,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.465,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.65,
+        "eval_count": 64,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -104,15 +167,15 @@
       "response_text": "2026년 10월부터 재택근무 신청 시 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서 제출 마감은 매주 목요일이며, 문의는 인사팀 내선 1234로 문의해주세요.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:51:07.982141Z",
+        "created_at": "2026-09-16T01:49:07.336131Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 1483546208,
-        "load_duration": 514625,
+        "total_duration": 1456457750,
+        "load_duration": 599542,
         "prompt_eval_count": 112,
-        "prompt_eval_duration": 53755000,
+        "prompt_eval_duration": 50817000,
         "eval_count": 64,
-        "eval_duration": 1428438000,
+        "eval_duration": 1404055000,
         "message": {
           "role": "assistant",
           "content": "2026년 10월부터 재택근무 신청 시 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서 제출 마감은 매주 목요일이며, 문의는 인사팀 내선 1234로 문의해주세요.",
@@ -122,6 +185,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.458,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.58,
+        "eval_count": 64,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -134,15 +208,15 @@
       "response_text": "2026년 10월부터 재택근무 신청 절차가 변경됩니다. 팀장 승인 후 인사팀(김지원 대리)에 신청서를 제출해야 하며, 매주 목요일까지 제출해야 다음 주에 반영됩니다. 문의는 인사팀 내선 1234로 해주세요.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:51:10.081961Z",
+        "created_at": "2026-09-16T01:49:09.208092Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 2098721041,
-        "load_duration": 525250,
+        "total_duration": 1868896041,
+        "load_duration": 548541,
         "prompt_eval_count": 131,
-        "prompt_eval_duration": 216372000,
+        "prompt_eval_duration": 23394000,
         "eval_count": 84,
-        "eval_duration": 1878309000,
+        "eval_duration": 1836956000,
         "message": {
           "role": "assistant",
           "content": "2026년 10월부터 재택근무 신청 절차가 변경됩니다. 팀장 승인 후 인사팀(김지원 대리)에 신청서를 제출해야 하며, 매주 목요일까지 제출해야 다음 주에 반영됩니다. 문의는 인사팀 내선 1234로 해주세요.",
@@ -152,6 +226,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.87,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.73,
+        "eval_count": 84,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -164,15 +249,15 @@
       "response_text": "2026년 10월부터 재택근무 신청 절차가 변경됩니다. 팀장 승인 후 인사팀(김지원 대리)에 신청서를 제출해야 하며, 매주 목요일까지 제출해야 다음 주에 반영됩니다. 문의는 인사팀 내선 1234로 해주세요.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:51:12.004334Z",
+        "created_at": "2026-09-16T01:49:11.08449Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 1921787458,
-        "load_duration": 500292,
+        "total_duration": 1873033167,
+        "load_duration": 570334,
         "prompt_eval_count": 131,
-        "prompt_eval_duration": 23694000,
+        "prompt_eval_duration": 22645000,
         "eval_count": 84,
-        "eval_duration": 1894134000,
+        "eval_duration": 1846814000,
         "message": {
           "role": "assistant",
           "content": "2026년 10월부터 재택근무 신청 절차가 변경됩니다. 팀장 승인 후 인사팀(김지원 대리)에 신청서를 제출해야 하며, 매주 목요일까지 제출해야 다음 주에 반영됩니다. 문의는 인사팀 내선 1234로 해주세요.",
@@ -182,6 +267,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.875,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.48,
+        "eval_count": 84,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -194,15 +290,15 @@
       "response_text": "다음은 회의록 요약입니다.\n\n**주요 내용:**\n\n*   신제품 A 출시일: 11월 15일 확정\n*   이서연 대리: 11월 1일까지 마케팅 자료 초안 작성\n*   최동훈 사원: 다음 주까지 협력사 견적서 수합\n*   다음 회의: 10월 20일 예정",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:51:14.227022Z",
+        "created_at": "2026-09-16T01:49:13.245501Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 2221332708,
-        "load_duration": 521416,
+        "total_duration": 2157694167,
+        "load_duration": 539542,
         "prompt_eval_count": 122,
-        "prompt_eval_duration": 118995000,
+        "prompt_eval_duration": 54931000,
         "eval_count": 94,
-        "eval_duration": 2092556999,
+        "eval_duration": 2091065000,
         "message": {
           "role": "assistant",
           "content": "다음은 회의록 요약입니다.\n\n**주요 내용:**\n\n*   신제품 A 출시일: 11월 15일 확정\n*   이서연 대리: 11월 1일까지 마케팅 자료 초안 작성\n*   최동훈 사원: 다음 주까지 협력사 견적서 수합\n*   다음 회의: 10월 20일 예정",
@@ -212,6 +308,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 2.16,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.95,
+        "eval_count": 94,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -224,15 +331,15 @@
       "response_text": "다음은 회의록 요약입니다.\n\n**주요 내용:**\n\n*   신제품 A 출시일: 11월 15일 확정\n*   이서연 대리: 11월 1일까지 마케팅 자료 초안 작성\n*   최동훈 사원: 다음 주까지 협력사 견적서 수합\n*   다음 회의: 10월 20일 예정",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:51:16.47808Z",
+        "created_at": "2026-09-16T01:49:15.456725Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 2249217333,
-        "load_duration": 667708,
+        "total_duration": 2207846708,
+        "load_duration": 583833,
         "prompt_eval_count": 122,
-        "prompt_eval_duration": 52013000,
+        "prompt_eval_duration": 51868000,
         "eval_count": 94,
-        "eval_duration": 2195487000,
+        "eval_duration": 2154469000,
         "message": {
           "role": "assistant",
           "content": "다음은 회의록 요약입니다.\n\n**주요 내용:**\n\n*   신제품 A 출시일: 11월 15일 확정\n*   이서연 대리: 11월 1일까지 마케팅 자료 초안 작성\n*   최동훈 사원: 다음 주까지 협력사 견적서 수합\n*   다음 회의: 10월 20일 예정",
@@ -242,6 +349,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 2.209,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 43.63,
+        "eval_count": 94,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -254,15 +372,15 @@
       "response_text": "[주간 회의 요약]\n\n- 신제품 A의 출시일은 11월 15일로 확정됨.  \n- 이서연 대리가 마케팅 자료 초안을 11월 1일까지 완성하여 제출.  \n- 최동훈 사원이 협력사 견적서를 다음 주까지 수합.  \n- 다음 회의는 10월 20일에 개최.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:51:19.172729Z",
+        "created_at": "2026-09-16T01:49:17.807119Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 2693991916,
-        "load_duration": 538333,
+        "total_duration": 2348675792,
+        "load_duration": 569084,
         "prompt_eval_count": 135,
-        "prompt_eval_duration": 181679000,
+        "prompt_eval_duration": 24170000,
         "eval_count": 104,
-        "eval_duration": 2502466000,
+        "eval_duration": 2312805000,
         "message": {
           "role": "assistant",
           "content": "[주간 회의 요약]\n\n- 신제품 A의 출시일은 11월 15일로 확정됨.  \n- 이서연 대리가 마케팅 자료 초안을 11월 1일까지 완성하여 제출.  \n- 최동훈 사원이 협력사 견적서를 다음 주까지 수합.  \n- 다음 회의는 10월 20일에 개최.",
@@ -272,6 +390,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 2.35,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.97,
+        "eval_count": 104,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -284,15 +413,15 @@
       "response_text": "[주간 회의 요약]\n\n- 신제품 A의 출시일은 11월 15일로 확정됨.  \n- 이서연 대리가 마케팅 자료 초안을 11월 1일까지 완성하여 제출.  \n- 최동훈 사원이 협력사 견적서를 다음 주까지 수합.  \n- 다음 회의는 10월 20일에 개최.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:51:21.59948Z",
+        "created_at": "2026-09-16T01:49:20.168606Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 2426096625,
-        "load_duration": 803500,
+        "total_duration": 2358438583,
+        "load_duration": 634333,
         "prompt_eval_count": 135,
-        "prompt_eval_duration": 24721000,
+        "prompt_eval_duration": 24087000,
         "eval_count": 104,
-        "eval_duration": 2397325000,
+        "eval_duration": 2330754000,
         "message": {
           "role": "assistant",
           "content": "[주간 회의 요약]\n\n- 신제품 A의 출시일은 11월 15일로 확정됨.  \n- 이서연 대리가 마케팅 자료 초안을 11월 1일까지 완성하여 제출.  \n- 최동훈 사원이 협력사 견적서를 다음 주까지 수합.  \n- 다음 회의는 10월 20일에 개최.",
@@ -302,6 +431,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 2.36,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.62,
+        "eval_count": 104,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -314,15 +454,15 @@
       "response_text": "프로젝트 X는 3분기 진행 상황이 70% 완료되었으며, 개발 파트는 계획대로 진행 중입니다. 하지만 디자인 파트가 인력 부족으로 인해 2주 지연될 예정입니다. 다음 마일스톤은 12월 1일 UAT 시작이며, 외부 API 연동 지연 가능성이 주요 리스크로 남아 있습니다.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:51:23.546898Z",
+        "created_at": "2026-09-16T01:49:22.065319Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 1946767542,
-        "load_duration": 564958,
+        "total_duration": 1894170125,
+        "load_duration": 650458,
         "prompt_eval_count": 93,
-        "prompt_eval_duration": 117708000,
+        "prompt_eval_duration": 54906000,
         "eval_count": 81,
-        "eval_duration": 1817309000,
+        "eval_duration": 1820640000,
         "message": {
           "role": "assistant",
           "content": "프로젝트 X는 3분기 진행 상황이 70% 완료되었으며, 개발 파트는 계획대로 진행 중입니다. 하지만 디자인 파트가 인력 부족으로 인해 2주 지연될 예정입니다. 다음 마일스톤은 12월 1일 UAT 시작이며, 외부 API 연동 지연 가능성이 주요 리스크로 남아 있습니다.",
@@ -332,6 +472,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.896,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.49,
+        "eval_count": 81,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -344,15 +495,15 @@
       "response_text": "프로젝트 X는 3분기 진행 상황이 70% 완료되었으며, 개발 파트는 계획대로 진행 중입니다. 하지만 디자인 파트가 인력 부족으로 인해 2주 지연될 예정입니다. 다음 마일스톤은 12월 1일 UAT 시작이며, 외부 API 연동 지연 가능성이 주요 리스크로 남아 있습니다.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:51:25.422866Z",
+        "created_at": "2026-09-16T01:49:23.908702Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 1874059417,
-        "load_duration": 630417,
+        "total_duration": 1840276250,
+        "load_duration": 589959,
         "prompt_eval_count": 93,
-        "prompt_eval_duration": 51230000,
+        "prompt_eval_duration": 49770000,
         "eval_count": 81,
-        "eval_duration": 1821153000,
+        "eval_duration": 1788999000,
         "message": {
           "role": "assistant",
           "content": "프로젝트 X는 3분기 진행 상황이 70% 완료되었으며, 개발 파트는 계획대로 진행 중입니다. 하지만 디자인 파트가 인력 부족으로 인해 2주 지연될 예정입니다. 다음 마일스톤은 12월 1일 UAT 시작이며, 외부 API 연동 지연 가능성이 주요 리스크로 남아 있습니다.",
@@ -362,6 +513,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.842,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.28,
+        "eval_count": 81,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -374,15 +536,15 @@
       "response_text": "[3분기 진행 보고서 요약]\n\n프로젝트 X는 전체 일정의 70%를 완료했으며, 개발 파트는 예정대로 진행되고 있습니다. 그러나 디자인 파트는 인력 부족으로 2주 지연이 예상됩니다. 다음 마일스톤은 12월 1일 UAT 시작입니다. 주요 리스크는 외부 API 연동 지연입니다.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:51:27.849722Z",
+        "created_at": "2026-09-16T01:49:26.151602Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 2425097208,
-        "load_duration": 551583,
+        "total_duration": 2239861292,
+        "load_duration": 568084,
         "prompt_eval_count": 110,
-        "prompt_eval_duration": 101932000,
+        "prompt_eval_duration": 23607000,
         "eval_count": 101,
-        "eval_duration": 2316667000,
+        "eval_duration": 2206910000,
         "message": {
           "role": "assistant",
           "content": "[3분기 진행 보고서 요약]\n\n프로젝트 X는 전체 일정의 70%를 완료했으며, 개발 파트는 예정대로 진행되고 있습니다. 그러나 디자인 파트는 인력 부족으로 2주 지연이 예상됩니다. 다음 마일스톤은 12월 1일 UAT 시작입니다. 주요 리스크는 외부 API 연동 지연입니다.",
@@ -392,6 +554,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 2.241,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.77,
+        "eval_count": 101,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -404,15 +577,15 @@
       "response_text": "[3분기 진행 보고서 요약]\n\n프로젝트 X는 전체 일정의 70%를 완료했으며, 개발 파트는 예정대로 진행되고 있습니다. 그러나 디자인 파트는 인력 부족으로 2주 지연이 예상됩니다. 다음 마일스톤은 12월 1일 UAT 시작입니다. 주요 리스크는 외부 API 연동 지연입니다.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:51:30.202896Z",
+        "created_at": "2026-09-16T01:49:28.383773Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 2352539625,
-        "load_duration": 450250,
+        "total_duration": 2228901583,
+        "load_duration": 589708,
         "prompt_eval_count": 110,
-        "prompt_eval_duration": 23962000,
+        "prompt_eval_duration": 22195000,
         "eval_count": 101,
-        "eval_duration": 2325095000,
+        "eval_duration": 2203183000,
         "message": {
           "role": "assistant",
           "content": "[3분기 진행 보고서 요약]\n\n프로젝트 X는 전체 일정의 70%를 완료했으며, 개발 파트는 예정대로 진행되고 있습니다. 그러나 디자인 파트는 인력 부족으로 2주 지연이 예상됩니다. 다음 마일스톤은 12월 1일 UAT 시작입니다. 주요 리스크는 외부 API 연동 지연입니다.",
@@ -422,6 +595,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 2.231,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.84,
+        "eval_count": 101,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -434,15 +618,15 @@
       "response_text": "다음은 회의록 요약입니다.\n\n*   **A안건:** 이하늘 담당, 9월 20일 마감 예정\n*   **B안건:** 정우진 담당, 9월 25일 마감 예정\n*   **C안건:** 담당자 미정, 다음 회의에서 재논의\n*   **일정 조치:** 김수현 부장은 전체 일정을 10월 1일로 앞당길 것을 요청함",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:51:32.692159Z",
+        "created_at": "2026-09-16T01:49:30.784186Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 2488427875,
-        "load_duration": 555000,
+        "total_duration": 2397123125,
+        "load_duration": 576375,
         "prompt_eval_count": 101,
-        "prompt_eval_duration": 114714000,
+        "prompt_eval_duration": 51827000,
         "eval_count": 106,
-        "eval_duration": 2366244000,
+        "eval_duration": 2337940000,
         "message": {
           "role": "assistant",
           "content": "다음은 회의록 요약입니다.\n\n*   **A안건:** 이하늘 담당, 9월 20일 마감 예정\n*   **B안건:** 정우진 담당, 9월 25일 마감 예정\n*   **C안건:** 담당자 미정, 다음 회의에서 재논의\n*   **일정 조치:** 김수현 부장은 전체 일정을 10월 1일로 앞당길 것을 요청함",
@@ -452,6 +636,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 2.398,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.34,
+        "eval_count": 106,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -464,15 +659,15 @@
       "response_text": "다음은 회의록 요약입니다.\n\n*   **A안건:** 이하늘 담당, 9월 20일 마감 예정\n*   **B안건:** 정우진 담당, 9월 25일 마감 예정\n*   **C안건:** 담당자 미정, 다음 회의에서 재논의\n*   **일정 조치:** 김수현 부장은 전체 일정을 10월 1일로 앞당길 것을 요청함",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:51:35.140686Z",
+        "created_at": "2026-09-16T01:49:33.181025Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 2447938500,
-        "load_duration": 544541,
+        "total_duration": 2393648125,
+        "load_duration": 556542,
         "prompt_eval_count": 101,
-        "prompt_eval_duration": 51158000,
+        "prompt_eval_duration": 50790000,
         "eval_count": 106,
-        "eval_duration": 2391810000,
+        "eval_duration": 2337990000,
         "message": {
           "role": "assistant",
           "content": "다음은 회의록 요약입니다.\n\n*   **A안건:** 이하늘 담당, 9월 20일 마감 예정\n*   **B안건:** 정우진 담당, 9월 25일 마감 예정\n*   **C안건:** 담당자 미정, 다음 회의에서 재논의\n*   **일정 조치:** 김수현 부장은 전체 일정을 10월 1일로 앞당길 것을 요청함",
@@ -482,6 +677,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 2.395,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.34,
+        "eval_count": 106,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -494,15 +700,15 @@
       "response_text": "회의록 요약:\n\n- A안건은 이하늘 담당, 9월 20일 마감  \n- B안건은 정우진 담당, 9월 25일 마감  \n- C안건은 담당자 미정으로, 다음 회의에서 재논의  \n- 김수현 부장이 전체 일정을 10월 1일로 앞당길 것을 요청",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:51:37.397776Z",
+        "created_at": "2026-09-16T01:49:35.3421Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 2255297625,
-        "load_duration": 551416,
+        "total_duration": 2157793042,
+        "load_duration": 593917,
         "prompt_eval_count": 108,
-        "prompt_eval_duration": 103683000,
+        "prompt_eval_duration": 23578000,
         "eval_count": 96,
-        "eval_duration": 2144105000,
+        "eval_duration": 2122074000,
         "message": {
           "role": "assistant",
           "content": "회의록 요약:\n\n- A안건은 이하늘 담당, 9월 20일 마감  \n- B안건은 정우진 담당, 9월 25일 마감  \n- C안건은 담당자 미정으로, 다음 회의에서 재논의  \n- 김수현 부장이 전체 일정을 10월 1일로 앞당길 것을 요청",
@@ -512,6 +718,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 2.159,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.24,
+        "eval_count": 96,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -524,15 +741,15 @@
       "response_text": "회의록 요약:\n\n- A안건은 이하늘 담당, 9월 20일 마감  \n- B안건은 정우진 담당, 9월 25일 마감  \n- C안건은 담당자 미정으로, 다음 회의에서 재논의  \n- 김수현 부장이 전체 일정을 10월 1일로 앞당길 것을 요청",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:51:39.575792Z",
+        "created_at": "2026-09-16T01:49:37.460585Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 2177100625,
-        "load_duration": 508875,
+        "total_duration": 2115264708,
+        "load_duration": 603083,
         "prompt_eval_count": 108,
-        "prompt_eval_duration": 23483000,
+        "prompt_eval_duration": 22481000,
         "eval_count": 96,
-        "eval_duration": 2150102000,
+        "eval_duration": 2089141999,
         "message": {
           "role": "assistant",
           "content": "회의록 요약:\n\n- A안건은 이하늘 담당, 9월 20일 마감  \n- B안건은 정우진 담당, 9월 25일 마감  \n- C안건은 담당자 미정으로, 다음 회의에서 재논의  \n- 김수현 부장이 전체 일정을 10월 1일로 앞당길 것을 요청",
@@ -542,6 +759,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 2.117,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.95,
+        "eval_count": 96,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -554,15 +782,15 @@
       "response_text": "프로젝트 예산이 회의 중 재무팀 검토 결과, 초기 계획인 5천만 원에서 4천 2백만 원으로 최종적으로 조정되었습니다.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:51:40.587308Z",
+        "created_at": "2026-09-16T01:49:38.363191Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 1009925166,
-        "load_duration": 577000,
+        "total_duration": 899596833,
+        "load_duration": 600083,
         "prompt_eval_count": 82,
-        "prompt_eval_duration": 108857000,
+        "prompt_eval_duration": 52862000,
         "eval_count": 39,
-        "eval_duration": 899363000,
+        "eval_duration": 844773000,
         "message": {
           "role": "assistant",
           "content": "프로젝트 예산이 회의 중 재무팀 검토 결과, 초기 계획인 5천만 원에서 4천 2백만 원으로 최종적으로 조정되었습니다.",
@@ -572,6 +800,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 0.901,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 46.17,
+        "eval_count": 39,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -584,15 +823,15 @@
       "response_text": "프로젝트 예산이 회의 중 재무팀 검토 결과, 초기 계획인 5천만 원에서 4천 2백만 원으로 최종적으로 조정되었습니다.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:51:41.523919Z",
+        "created_at": "2026-09-16T01:49:39.265818Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 934941583,
-        "load_duration": 568333,
+        "total_duration": 899385000,
+        "load_duration": 570625,
         "prompt_eval_count": 82,
-        "prompt_eval_duration": 51703000,
+        "prompt_eval_duration": 49714000,
         "eval_count": 39,
-        "eval_duration": 881726000,
+        "eval_duration": 848190000,
         "message": {
           "role": "assistant",
           "content": "프로젝트 예산이 회의 중 재무팀 검토 결과, 초기 계획인 5천만 원에서 4천 2백만 원으로 최종적으로 조정되었습니다.",
@@ -602,6 +841,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 0.902,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.98,
+        "eval_count": 39,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -614,15 +864,15 @@
       "response_text": "프로젝트 예산은 초안 5천만 원에서 재무팀 검토 후 4천 2백만 원으로 하향 조정되었으며, 이金额가 최종 승인된 예산으로 확정되었습니다.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:51:42.873679Z",
+        "created_at": "2026-09-16T01:49:40.426995Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 1348542125,
-        "load_duration": 593083,
+        "total_duration": 1157467916,
+        "load_duration": 523583,
         "prompt_eval_count": 93,
-        "prompt_eval_duration": 99042000,
+        "prompt_eval_duration": 23159000,
         "eval_count": 52,
-        "eval_duration": 1242624000,
+        "eval_duration": 1123556000,
         "message": {
           "role": "assistant",
           "content": "프로젝트 예산은 초안 5천만 원에서 재무팀 검토 후 4천 2백만 원으로 하향 조정되었으며, 이金额가 최종 승인된 예산으로 확정되었습니다.",
@@ -632,6 +882,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.159,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 46.28,
+        "eval_count": 52,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -644,15 +905,15 @@
       "response_text": "프로젝트 예산은 초안 5천만 원에서 재무팀 검토 후 4천 2백만 원으로 하향 조정되었으며, 이金额가 최종 승인된 예산으로 확정되었습니다.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:51:44.142395Z",
+        "created_at": "2026-09-16T01:49:41.578649Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 1267782667,
-        "load_duration": 494917,
+        "total_duration": 1148327958,
+        "load_duration": 571417,
         "prompt_eval_count": 93,
-        "prompt_eval_duration": 25966000,
+        "prompt_eval_duration": 23002000,
         "eval_count": 52,
-        "eval_duration": 1238309000,
+        "eval_duration": 1121847000,
         "message": {
           "role": "assistant",
           "content": "프로젝트 예산은 초안 5천만 원에서 재무팀 검토 후 4천 2백만 원으로 하향 조정되었으며, 이金额가 최종 승인된 예산으로 확정되었습니다.",
@@ -662,6 +923,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.15,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 46.35,
+        "eval_count": 52,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -674,15 +946,15 @@
       "response_text": "## 주간 회의록 결정사항 및 액션 아이템\n\n| 담당자       | 내용                     | 기한       |\n|--------------|--------------------------|------------|\n| 이서연 대리   | 신제품 A 마케팅 자료 초안 작성 | 11월 1일    |\n| 최동훈 사원 | 협력사 견적서 수합          | 다음 주      |\n| 전체 팀       | 신제품 A 출시일 확정        | 11월 15일   |\n\n---\n\n**참고:** \"다음 주\"는 10월 20일 이후의 주를 의미합니다.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:51:47.556556Z",
+        "created_at": "2026-09-16T01:49:44.782124Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 3412436959,
-        "load_duration": 495417,
+        "total_duration": 3200171125,
+        "load_duration": 548375,
         "prompt_eval_count": 141,
-        "prompt_eval_duration": 188440000,
+        "prompt_eval_duration": 54553000,
         "eval_count": 139,
-        "eval_duration": 3219095000,
+        "eval_duration": 3136773000,
         "message": {
           "role": "assistant",
           "content": "## 주간 회의록 결정사항 및 액션 아이템\n\n| 담당자       | 내용                     | 기한       |\n|--------------|--------------------------|------------|\n| 이서연 대리   | 신제품 A 마케팅 자료 초안 작성 | 11월 1일    |\n| 최동훈 사원 | 협력사 견적서 수합          | 다음 주      |\n| 전체 팀       | 신제품 A 출시일 확정        | 11월 15일   |\n\n---\n\n**참고:** \"다음 주\"는 10월 20일 이후의 주를 의미합니다.",
@@ -692,6 +964,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 3.201,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.31,
+        "eval_count": 139,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -704,15 +987,15 @@
       "response_text": "## 주간 회의록 결정사항 및 액션 아이템\n\n| 담당자       | 내용                     | 기한       |\n|--------------|--------------------------|------------|\n| 이서연 대리   | 신제품 A 마케팅 자료 초안 작성 | 11월 1일    |\n| 최동훈 사원 | 협력사 견적서 수합          | 다음 주      |\n| 전체 팀       | 신제품 A 출시일 확정        | 11월 15일   |\n\n---\n\n**참고:** \"다음 주\"는 10월 20일 이후의 주를 의미합니다.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:51:50.783919Z",
+        "created_at": "2026-09-16T01:49:47.994089Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 3225089000,
-        "load_duration": 499167,
+        "total_duration": 3210108500,
+        "load_duration": 515083,
         "prompt_eval_count": 141,
-        "prompt_eval_duration": 53848000,
+        "prompt_eval_duration": 53078000,
         "eval_count": 139,
-        "eval_duration": 3169845000,
+        "eval_duration": 3155639000,
         "message": {
           "role": "assistant",
           "content": "## 주간 회의록 결정사항 및 액션 아이템\n\n| 담당자       | 내용                     | 기한       |\n|--------------|--------------------------|------------|\n| 이서연 대리   | 신제품 A 마케팅 자료 초안 작성 | 11월 1일    |\n| 최동훈 사원 | 협력사 견적서 수합          | 다음 주      |\n| 전체 팀       | 신제품 A 출시일 확정        | 11월 15일   |\n\n---\n\n**참고:** \"다음 주\"는 10월 20일 이후의 주를 의미합니다.",
@@ -722,6 +1005,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 3.212,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.05,
+        "eval_count": 139,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -734,15 +1028,15 @@
       "response_text": "다음은 주간 회의록의 결정사항과 액션 아이템을 표로 정리한 내용입니다.\n\n| 담당자       | 내용                                 | 기한         |\n|-------------|--------------------------------------|--------------|\n| 박민수 팀장 | 신제품 A의 출시일을 11월 15일로 확정 | 즉시 시행     |\n| 이서연 대리 | 마케팅 자료 초안 작성               | 11월 1일     |\n| 최동훈 사원 | 협력사 견적서 수합                  | 다음 주까지 (예: 10월 20일 이후) |\n| 전체 팀     | 다음 회의 예정                      | 10월 20일    |\n\n> ※ \"다음 주까지\"는 회의 기준으로 10월 20일 이후의 주(예: 10월 27일)를 의미하며, 구체적인 날짜는 참석자들이 다음 주를 정확히 판단해야 합니다.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:51:56.278866Z",
+        "created_at": "2026-09-16T01:49:53.307812Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 5493818209,
-        "load_duration": 502292,
+        "total_duration": 5309877125,
+        "load_duration": 1025083,
         "prompt_eval_count": 156,
-        "prompt_eval_duration": 178511000,
+        "prompt_eval_duration": 29176000,
         "eval_count": 232,
-        "eval_duration": 5309152000,
+        "eval_duration": 5265314000,
         "message": {
           "role": "assistant",
           "content": "다음은 주간 회의록의 결정사항과 액션 아이템을 표로 정리한 내용입니다.\n\n| 담당자       | 내용                                 | 기한         |\n|-------------|--------------------------------------|--------------|\n| 박민수 팀장 | 신제품 A의 출시일을 11월 15일로 확정 | 즉시 시행     |\n| 이서연 대리 | 마케팅 자료 초안 작성               | 11월 1일     |\n| 최동훈 사원 | 협력사 견적서 수합                  | 다음 주까지 (예: 10월 20일 이후) |\n| 전체 팀     | 다음 회의 예정                      | 10월 20일    |\n\n> ※ \"다음 주까지\"는 회의 기준으로 10월 20일 이후의 주(예: 10월 27일)를 의미하며, 구체적인 날짜는 참석자들이 다음 주를 정확히 판단해야 합니다.",
@@ -752,6 +1046,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 5.312,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.06,
+        "eval_count": 232,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -764,15 +1069,15 @@
       "response_text": "다음은 주간 회의록의 결정사항과 액션 아이템을 표로 정리한 내용입니다.\n\n| 담당자       | 내용                                 | 기한         |\n|-------------|--------------------------------------|--------------|\n| 박민수 팀장 | 신제품 A의 출시일을 11월 15일로 확정 | 즉시 시행     |\n| 이서연 대리 | 마케팅 자료 초안 작성               | 11월 1일     |\n| 최동훈 사원 | 협력사 견적서 수합                  | 다음 주까지 (예: 10월 20일 이후) |\n| 전체 팀     | 다음 회의 예정                      | 10월 20일    |\n\n> ※ \"다음 주까지\"는 회의 기준으로 10월 20일 이후의 주(예: 10월 27일)를 의미하며, 구체적인 날짜는 참석자들이 다음 주를 정확히 판단해야 합니다.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:52:01.467067Z",
+        "created_at": "2026-09-16T01:49:58.547968Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 5186283334,
-        "load_duration": 623959,
+        "total_duration": 5238355541,
+        "load_duration": 507125,
         "prompt_eval_count": 156,
-        "prompt_eval_duration": 23502000,
+        "prompt_eval_duration": 24053000,
         "eval_count": 232,
-        "eval_duration": 5152379000,
+        "eval_duration": 5207189000,
         "message": {
           "role": "assistant",
           "content": "다음은 주간 회의록의 결정사항과 액션 아이템을 표로 정리한 내용입니다.\n\n| 담당자       | 내용                                 | 기한         |\n|-------------|--------------------------------------|--------------|\n| 박민수 팀장 | 신제품 A의 출시일을 11월 15일로 확정 | 즉시 시행     |\n| 이서연 대리 | 마케팅 자료 초안 작성               | 11월 1일     |\n| 최동훈 사원 | 협력사 견적서 수합                  | 다음 주까지 (예: 10월 20일 이후) |\n| 전체 팀     | 다음 회의 예정                      | 10월 20일    |\n\n> ※ \"다음 주까지\"는 회의 기준으로 10월 20일 이후의 주(예: 10월 27일)를 의미하며, 구체적인 날짜는 참석자들이 다음 주를 정확히 판단해야 합니다.",
@@ -782,6 +1087,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 5.24,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.55,
+        "eval_count": 232,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -794,15 +1110,15 @@
       "response_text": "내일 오전 10시에 전체 회의가 있습니다.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:52:01.874019Z",
+        "created_at": "2026-09-16T01:49:58.90949Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 405148750,
-        "load_duration": 603208,
+        "total_duration": 358299458,
+        "load_duration": 671958,
         "prompt_eval_count": 37,
-        "prompt_eval_duration": 104141000,
+        "prompt_eval_duration": 52332000,
         "eval_count": 14,
-        "eval_duration": 289929000,
+        "eval_duration": 294157000,
         "message": {
           "role": "assistant",
           "content": "내일 오전 10시에 전체 회의가 있습니다.",
@@ -812,6 +1128,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 0.36,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 47.59,
+        "eval_count": 14,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -824,15 +1151,15 @@
       "response_text": "내일 오전 10시에 전체 회의가 있습니다.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:52:02.217614Z",
+        "created_at": "2026-09-16T01:49:59.258487Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 341823208,
-        "load_duration": 643916,
+        "total_duration": 347466041,
+        "load_duration": 500750,
         "prompt_eval_count": 37,
-        "prompt_eval_duration": 50207000,
+        "prompt_eval_duration": 49943000,
         "eval_count": 14,
-        "eval_duration": 290067000,
+        "eval_duration": 296307000,
         "message": {
           "role": "assistant",
           "content": "내일 오전 10시에 전체 회의가 있습니다.",
@@ -842,6 +1169,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 0.348,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 47.25,
+        "eval_count": 14,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -854,15 +1192,15 @@
       "response_text": "내일 오전 10시 전체 회의가 있습니다.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:52:02.612233Z",
+        "created_at": "2026-09-16T01:49:59.601127Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 392818666,
-        "load_duration": 593375,
+        "total_duration": 340606334,
+        "load_duration": 565625,
         "prompt_eval_count": 36,
-        "prompt_eval_duration": 81817000,
+        "prompt_eval_duration": 23629000,
         "eval_count": 15,
-        "eval_duration": 307245000,
+        "eval_duration": 311733000,
         "message": {
           "role": "assistant",
           "content": "내일 오전 10시 전체 회의가 있습니다.",
@@ -872,6 +1210,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 0.342,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 48.12,
+        "eval_count": 15,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -884,15 +1233,15 @@
       "response_text": "내일 오전 10시 전체 회의가 있습니다.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:52:02.947937Z",
+        "created_at": "2026-09-16T01:49:59.939182Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 333937792,
-        "load_duration": 512542,
+        "total_duration": 335762125,
+        "load_duration": 526875,
         "prompt_eval_count": 36,
-        "prompt_eval_duration": 23423000,
+        "prompt_eval_duration": 22902000,
         "eval_count": 15,
-        "eval_duration": 307028000,
+        "eval_duration": 309311000,
         "message": {
           "role": "assistant",
           "content": "내일 오전 10시 전체 회의가 있습니다.",
@@ -902,6 +1251,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 0.337,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 48.49,
+        "eval_count": 15,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -914,15 +1274,15 @@
       "response_text": "이 회의록에는 구체적인 예산 규모에 대한 언급은 없습니다. 다만, 신제품 A 출시와 관련된 마케팅 자료 작성 및 협력사 견적서 수합 등의 업무가 논의된 것으로 확인됩니다.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:52:04.164958Z",
+        "created_at": "2026-09-16T01:50:01.105706Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 1215263958,
-        "load_duration": 572958,
+        "total_duration": 1162952542,
+        "load_duration": 611167,
         "prompt_eval_count": 127,
-        "prompt_eval_duration": 119821000,
+        "prompt_eval_duration": 54951000,
         "eval_count": 50,
-        "eval_duration": 1092301000,
+        "eval_duration": 1100967000,
         "message": {
           "role": "assistant",
           "content": "이 회의록에는 구체적인 예산 규모에 대한 언급은 없습니다. 다만, 신제품 A 출시와 관련된 마케팅 자료 작성 및 협력사 견적서 수합 등의 업무가 논의된 것으로 확인됩니다.",
@@ -932,6 +1292,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.165,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.41,
+        "eval_count": 50,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -944,15 +1315,15 @@
       "response_text": "이 회의록에는 구체적인 예산 규모에 대한 언급은 없습니다. 다만, 신제품 A 출시와 관련된 마케팅 자료 작성 및 협력사 견적서 수합 등의 업무가 논의된 것으로 확인됩니다.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:52:05.313185Z",
+        "created_at": "2026-09-16T01:50:02.261736Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 1146848208,
-        "load_duration": 448375,
+        "total_duration": 1154015750,
+        "load_duration": 469250,
         "prompt_eval_count": 127,
-        "prompt_eval_duration": 51992000,
+        "prompt_eval_duration": 50540000,
         "eval_count": 50,
-        "eval_duration": 1093447000,
+        "eval_duration": 1102250000,
         "message": {
           "role": "assistant",
           "content": "이 회의록에는 구체적인 예산 규모에 대한 언급은 없습니다. 다만, 신제품 A 출시와 관련된 마케팅 자료 작성 및 협력사 견적서 수합 등의 업무가 논의된 것으로 확인됩니다.",
@@ -962,6 +1333,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.155,
+        "load_duration_sec": 0.0,
+        "tokens_per_sec": 45.36,
+        "eval_count": 50,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -974,15 +1356,15 @@
       "response_text": "주어진 회의록에는 **예산 규모**에 대한 언급이 없습니다.\n\n논의된 내용은 다음과 같습니다:\n- 신제품 A의 출시일: 11월 15일\n- 마케팅 자료 초안 제출 기한: 11월 1일\n- 협력사 견적서 수합 기한: 다음 주까지\n- 다음 회의일: 10월 20일\n\n이러한 내용들은 일정과 책임 분담에 관한 것이며, **예산 규모**는 전혀 언급되어 있지 않습니다.\n\n👉 따라서, 회의록에서 논의된 예산 규모는 **없습니다**.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:52:08.875154Z",
+        "created_at": "2026-09-16T01:50:05.743501Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 3561377542,
-        "load_duration": 516084,
+        "total_duration": 3479772166,
+        "load_duration": 465791,
         "prompt_eval_count": 141,
-        "prompt_eval_duration": 175172000,
+        "prompt_eval_duration": 23461000,
         "eval_count": 153,
-        "eval_duration": 3381706000,
+        "eval_duration": 3446999000,
         "message": {
           "role": "assistant",
           "content": "주어진 회의록에는 **예산 규모**에 대한 언급이 없습니다.\n\n논의된 내용은 다음과 같습니다:\n- 신제품 A의 출시일: 11월 15일\n- 마케팅 자료 초안 제출 기한: 11월 1일\n- 협력사 견적서 수합 기한: 다음 주까지\n- 다음 회의일: 10월 20일\n\n이러한 내용들은 일정과 책임 분담에 관한 것이며, **예산 규모**는 전혀 언급되어 있지 않습니다.\n\n👉 따라서, 회의록에서 논의된 예산 규모는 **없습니다**.",
@@ -992,6 +1374,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 3.481,
+        "load_duration_sec": 0.0,
+        "tokens_per_sec": 44.39,
+        "eval_count": 153,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -1004,15 +1397,15 @@
       "response_text": "주어진 회의록에는 **예산 규모**에 대한 언급이 없습니다.\n\n논의된 내용은 다음과 같습니다:\n- 신제품 A의 출시일: 11월 15일\n- 마케팅 자료 초안 제출 기한: 11월 1일\n- 협력사 견적서 수합 기한: 다음 주까지\n- 다음 회의일: 10월 20일\n\n이러한 내용들은 일정과 책임 분담에 관한 것이며, **예산 규모**는 전혀 언급되어 있지 않습니다.\n\n👉 따라서, 회의록에서 논의된 예산 규모는 **없습니다**.",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:52:12.291041Z",
+        "created_at": "2026-09-16T01:50:09.211921Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 3414415250,
-        "load_duration": 566875,
+        "total_duration": 3466244417,
+        "load_duration": 499500,
         "prompt_eval_count": 141,
-        "prompt_eval_duration": 24575000,
+        "prompt_eval_duration": 23729000,
         "eval_count": 153,
-        "eval_duration": 3379402000,
+        "eval_duration": 3434883000,
         "message": {
           "role": "assistant",
           "content": "주어진 회의록에는 **예산 규모**에 대한 언급이 없습니다.\n\n논의된 내용은 다음과 같습니다:\n- 신제품 A의 출시일: 11월 15일\n- 마케팅 자료 초안 제출 기한: 11월 1일\n- 협력사 견적서 수합 기한: 다음 주까지\n- 다음 회의일: 10월 20일\n\n이러한 내용들은 일정과 책임 분담에 관한 것이며, **예산 규모**는 전혀 언급되어 있지 않습니다.\n\n👉 따라서, 회의록에서 논의된 예산 규모는 **없습니다**.",
@@ -1022,6 +1415,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 3.468,
+        "load_duration_sec": 0.0,
+        "tokens_per_sec": 44.54,
+        "eval_count": 153,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -1034,15 +1438,15 @@
       "response_text": "제공된 보고서에는 경쟁사 대응에 대한 정보가 명시적으로 언급되어 있지 않습니다. 보고서는 프로젝트 X의 진행 상황과 관련된 정보만 담고 있습니다. \n\n보고서에서 알 수 있는 점은 다음과 같습니다.\n\n*   **디자인 파트의 지연:** 디자인 파트가 인력 부족으로 2주 지연될 가능성이 있어, 경쟁사들이 유사한 디자인 작업을 더 빠르게 완료하고 있을 가능성이 있습니다.\n*   **외부 API 연동 지연 리스크:** 외부 API 연동 지연은 프로젝트 전체 일정에 영향을 미칠 수 있으며, 경쟁사들이 API 연동을 더 효율적으로 처리하고 있을 가능성이 있습니다.\n\n**경쟁사 대응에 대한 추가 정보를 얻기 위해서는** 보고서 외에 다른 자료(시장 조사 보고서, 경쟁사 웹사이트, 뉴스 기사 등)를 참고해야 합니다.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:52:16.501949Z",
+        "created_at": "2026-09-16T01:50:13.385256Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 4210063417,
-        "load_duration": 578042,
+        "total_duration": 4170318666,
+        "load_duration": 602333,
         "prompt_eval_count": 99,
-        "prompt_eval_duration": 113643000,
+        "prompt_eval_duration": 53177000,
         "eval_count": 184,
-        "eval_duration": 4086514000,
+        "eval_duration": 4102792000,
         "message": {
           "role": "assistant",
           "content": "제공된 보고서에는 경쟁사 대응에 대한 정보가 명시적으로 언급되어 있지 않습니다. 보고서는 프로젝트 X의 진행 상황과 관련된 정보만 담고 있습니다. \n\n보고서에서 알 수 있는 점은 다음과 같습니다.\n\n*   **디자인 파트의 지연:** 디자인 파트가 인력 부족으로 2주 지연될 가능성이 있어, 경쟁사들이 유사한 디자인 작업을 더 빠르게 완료하고 있을 가능성이 있습니다.\n*   **외부 API 연동 지연 리스크:** 외부 API 연동 지연은 프로젝트 전체 일정에 영향을 미칠 수 있으며, 경쟁사들이 API 연동을 더 효율적으로 처리하고 있을 가능성이 있습니다.\n\n**경쟁사 대응에 대한 추가 정보를 얻기 위해서는** 보고서 외에 다른 자료(시장 조사 보고서, 경쟁사 웹사이트, 뉴스 기사 등)를 참고해야 합니다.",
@@ -1052,6 +1456,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 4.172,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.85,
+        "eval_count": 184,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -1064,15 +1479,15 @@
       "response_text": "제공된 보고서에는 경쟁사 대응에 대한 정보가 명시적으로 언급되어 있지 않습니다. 보고서는 프로젝트 X의 진행 상황과 관련된 정보만 담고 있습니다. \n\n보고서에서 알 수 있는 점은 다음과 같습니다.\n\n*   **디자인 파트의 지연:** 디자인 파트가 인력 부족으로 2주 지연될 가능성이 있어, 경쟁사들이 유사한 디자인 작업을 더 빠르게 완료하고 있을 가능성이 있습니다.\n*   **외부 API 연동 지연 리스크:** 외부 API 연동 지연은 프로젝트 전체 일정에 영향을 미칠 수 있으며, 경쟁사들이 API 연동을 더 효율적으로 처리하고 있을 가능성이 있습니다.\n\n**경쟁사 대응에 대한 추가 정보를 얻기 위해서는** 보고서 외에 다른 자료(시장 조사 보고서, 경쟁사 웹사이트, 뉴스 기사 등)를 참고해야 합니다.",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:52:20.762773Z",
+        "created_at": "2026-09-16T01:50:17.655034Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 4259033500,
-        "load_duration": 657334,
+        "total_duration": 4266763167,
+        "load_duration": 591000,
         "prompt_eval_count": 99,
-        "prompt_eval_duration": 51481000,
+        "prompt_eval_duration": 50213000,
         "eval_count": 184,
-        "eval_duration": 4200929000,
+        "eval_duration": 4211573999,
         "message": {
           "role": "assistant",
           "content": "제공된 보고서에는 경쟁사 대응에 대한 정보가 명시적으로 언급되어 있지 않습니다. 보고서는 프로젝트 X의 진행 상황과 관련된 정보만 담고 있습니다. \n\n보고서에서 알 수 있는 점은 다음과 같습니다.\n\n*   **디자인 파트의 지연:** 디자인 파트가 인력 부족으로 2주 지연될 가능성이 있어, 경쟁사들이 유사한 디자인 작업을 더 빠르게 완료하고 있을 가능성이 있습니다.\n*   **외부 API 연동 지연 리스크:** 외부 API 연동 지연은 프로젝트 전체 일정에 영향을 미칠 수 있으며, 경쟁사들이 API 연동을 더 효율적으로 처리하고 있을 가능성이 있습니다.\n\n**경쟁사 대응에 대한 추가 정보를 얻기 위해서는** 보고서 외에 다른 자료(시장 조사 보고서, 경쟁사 웹사이트, 뉴스 기사 등)를 참고해야 합니다.",
@@ -1082,6 +1497,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 4.268,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 43.69,
+        "eval_count": 184,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -1094,15 +1520,15 @@
       "response_text": "주어진 보고서에서 **경쟁사가 이 프로젝트에 어떻게 대응하고 있는지**에 대한 정보는 **직접적으로 언급되어 있지 않습니다**.\n\n보고서는 프로젝트 X의 내부 진행 상황(개발 및 디자인 파트의 진행 상태, 마일스톤, 리스크 등)을 설명하고 있지만, **경쟁사의 행동이나 반응**에 대한 내용은 전혀 포함되어 있지 않습니다.\n\n따라서, 이 보고서를 기반으로 **경쟁사가 어떻게 대응하고 있는지**를 판단할 수는 없습니다.\n\n✅ 결론:  \n**보고서 내용에서 경쟁사의 대응 방식은 명시되어 있지 않으며, 해당 정보는 제공되지 않았습니다.**  \n→ 따라서 \"경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\"에 대한 답변은 **불가능합니다**.\n\n> 💡 보완 제안: 만약 이 질문이 전략적 분석을 위한 것이면, 추가 정보(예: 시장 동향, 경쟁사의 발표, 제품 출시 일정 등)이 필요합니다. 현재 보고서는 내부",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:52:26.534489Z",
+        "created_at": "2026-09-16T01:50:23.671401Z",
         "done": true,
         "done_reason": "length",
-        "total_duration": 5771123833,
-        "load_duration": 517167,
+        "total_duration": 6013296042,
+        "load_duration": 670417,
         "prompt_eval_count": 120,
-        "prompt_eval_duration": 105498000,
+        "prompt_eval_duration": 33760000,
         "eval_count": 256,
-        "eval_duration": 5661924000,
+        "eval_duration": 5971390000,
         "message": {
           "role": "assistant",
           "content": "주어진 보고서에서 **경쟁사가 이 프로젝트에 어떻게 대응하고 있는지**에 대한 정보는 **직접적으로 언급되어 있지 않습니다**.\n\n보고서는 프로젝트 X의 내부 진행 상황(개발 및 디자인 파트의 진행 상태, 마일스톤, 리스크 등)을 설명하고 있지만, **경쟁사의 행동이나 반응**에 대한 내용은 전혀 포함되어 있지 않습니다.\n\n따라서, 이 보고서를 기반으로 **경쟁사가 어떻게 대응하고 있는지**를 판단할 수는 없습니다.\n\n✅ 결론:  \n**보고서 내용에서 경쟁사의 대응 방식은 명시되어 있지 않으며, 해당 정보는 제공되지 않았습니다.**  \n→ 따라서 \"경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\"에 대한 답변은 **불가능합니다**.\n\n> 💡 보완 제안: 만약 이 질문이 전략적 분석을 위한 것이면, 추가 정보(예: 시장 동향, 경쟁사의 발표, 제품 출시 일정 등)이 필요합니다. 현재 보고서는 내부",
@@ -1112,6 +1538,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 6.015,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 42.87,
+        "eval_count": 256,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -1124,15 +1561,15 @@
       "response_text": "주어진 보고서에서 **경쟁사가 이 프로젝트에 어떻게 대응하고 있는지**에 대한 정보는 **직접적으로 언급되어 있지 않습니다**.\n\n보고서는 프로젝트 X의 내부 진행 상황(개발 및 디자인 파트의 진행 상태, 마일스톤, 리스크 등)을 설명하고 있지만, **경쟁사의 행동이나 반응**에 대한 내용은 전혀 포함되어 있지 않습니다.\n\n따라서, 이 보고서를 기반으로 **경쟁사가 어떻게 대응하고 있는지**를 판단할 수는 없습니다.\n\n✅ 결론:  \n**보고서 내용에서 경쟁사의 대응 방식은 명시되어 있지 않으며, 해당 정보는 제공되지 않았습니다.**  \n→ 따라서 \"경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\"에 대한 답변은 **불가능합니다**.\n\n> 💡 보완 제안: 만약 이 질문이 전략적 분석을 위한 것이면, 추가 정보(예: 시장 동향, 경쟁사의 발표, 제품 출시 일정 등)이 필요합니다. 현재 보고서는 내부",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:52:32.458558Z",
+        "created_at": "2026-09-16T01:50:29.495728Z",
         "done": true,
         "done_reason": "length",
-        "total_duration": 5922177500,
-        "load_duration": 608750,
+        "total_duration": 5822220750,
+        "load_duration": 628833,
         "prompt_eval_count": 120,
-        "prompt_eval_duration": 24968000,
+        "prompt_eval_duration": 24664000,
         "eval_count": 256,
-        "eval_duration": 5887325000,
+        "eval_duration": 5789460000,
         "message": {
           "role": "assistant",
           "content": "주어진 보고서에서 **경쟁사가 이 프로젝트에 어떻게 대응하고 있는지**에 대한 정보는 **직접적으로 언급되어 있지 않습니다**.\n\n보고서는 프로젝트 X의 내부 진행 상황(개발 및 디자인 파트의 진행 상태, 마일스톤, 리스크 등)을 설명하고 있지만, **경쟁사의 행동이나 반응**에 대한 내용은 전혀 포함되어 있지 않습니다.\n\n따라서, 이 보고서를 기반으로 **경쟁사가 어떻게 대응하고 있는지**를 판단할 수는 없습니다.\n\n✅ 결론:  \n**보고서 내용에서 경쟁사의 대응 방식은 명시되어 있지 않으며, 해당 정보는 제공되지 않았습니다.**  \n→ 따라서 \"경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\"에 대한 답변은 **불가능합니다**.\n\n> 💡 보완 제안: 만약 이 질문이 전략적 분석을 위한 것이면, 추가 정보(예: 시장 동향, 경쟁사의 발표, 제품 출시 일정 등)이 필요합니다. 현재 보고서는 내부",
@@ -1142,6 +1579,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 5.824,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.22,
+        "eval_count": 256,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -1154,15 +1602,15 @@
       "response_text": "제공된 공지에는 신청서 양식의 파일 형식에 대한 정보가 포함되어 있지 않습니다. \n\n공지 내용만으로는 신청서 파일 형식을 알 수 없습니다. \n\n**신청서 양식 파일 형식은 회사 내부 시스템이나 인사팀에 문의하여 확인해야 합니다.**\n",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:52:34.174969Z",
+        "created_at": "2026-09-16T01:50:30.976349Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 1714598500,
-        "load_duration": 622000,
+        "total_duration": 1477289042,
+        "load_duration": 649917,
         "prompt_eval_count": 116,
-        "prompt_eval_duration": 209149000,
+        "prompt_eval_duration": 55993000,
         "eval_count": 64,
-        "eval_duration": 1503675000,
+        "eval_duration": 1416210000,
         "message": {
           "role": "assistant",
           "content": "제공된 공지에는 신청서 양식의 파일 형식에 대한 정보가 포함되어 있지 않습니다. \n\n공지 내용만으로는 신청서 파일 형식을 알 수 없습니다. \n\n**신청서 양식 파일 형식은 회사 내부 시스템이나 인사팀에 문의하여 확인해야 합니다.**\n",
@@ -1172,6 +1620,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.479,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.19,
+        "eval_count": 64,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -1184,15 +1643,15 @@
       "response_text": "제공된 공지에는 신청서 양식의 파일 형식에 대한 정보가 포함되어 있지 않습니다. \n\n공지 내용만으로는 신청서 파일 형식을 알 수 없습니다. \n\n**신청서 양식 파일 형식은 회사 내부 시스템이나 인사팀에 문의하여 확인해야 합니다.**\n",
       "raw_response": {
         "model": "gemma3:4b",
-        "created_at": "2026-09-15T08:52:35.691411Z",
+        "created_at": "2026-09-16T01:50:32.475503Z",
         "done": true,
         "done_reason": "stop",
-        "total_duration": 1515158500,
-        "load_duration": 538375,
+        "total_duration": 1496042042,
+        "load_duration": 593500,
         "prompt_eval_count": 116,
-        "prompt_eval_duration": 51401000,
+        "prompt_eval_duration": 50204000,
         "eval_count": 64,
-        "eval_duration": 1462350000,
+        "eval_duration": 1444272000,
         "message": {
           "role": "assistant",
           "content": "제공된 공지에는 신청서 양식의 파일 형식에 대한 정보가 포함되어 있지 않습니다. \n\n공지 내용만으로는 신청서 파일 형식을 알 수 없습니다. \n\n**신청서 양식 파일 형식은 회사 내부 시스템이나 인사팀에 문의하여 확인해야 합니다.**\n",
@@ -1202,6 +1661,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.498,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.31,
+        "eval_count": 64,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -1214,15 +1684,15 @@
       "response_text": "이 공지 내용에서 언급된 **\"신청서 양식(파일 형식)\"** 에 대해 명확히 언급되어 있지 않습니다.\n\n즉, 공지문은 다음과 같은 내용을 담고 있습니다:\n\n- 재택근무 신청 절차가 변경됨  \n- 팀장 승인 후 인사팀(김지원 대리)에게 신청서 제출 필요  \n- 제출 기한: 매주 목요일까지  \n- 문의처: 인사팀 내선 1234  \n\n하지만 **신청서의 파일 형식**(예: PDF, Word, Excel 등)이나 **어떤 파일 형식으로 제공되는지**에 대해서는 **어떤 정보도 포함되어 있지 않습니다**.\n\n---\n\n✅ 결론:\n\n> 이 공지문에서 **신청서의 파일 형식**은 **명시되어 있지 않습니다**.  \n> 따라서, \"신청서 양식(파일 형식)\"이 무엇인지 알 수 없습니다.\n\n---\n\n💡 추천 답변 (실제 상황에 맞게 사용 가능):\n\n> 본 공지에서는 재택근무 신청 절차의 변경 사항을 안내하고 있으나, 신청서",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:52:41.594782Z",
+        "created_at": "2026-09-16T01:50:38.32647Z",
         "done": true,
         "done_reason": "length",
-        "total_duration": 5902736417,
-        "load_duration": 517167,
+        "total_duration": 5847638750,
+        "load_duration": 679208,
         "prompt_eval_count": 141,
-        "prompt_eval_duration": 178347000,
+        "prompt_eval_duration": 24109000,
         "eval_count": 256,
-        "eval_duration": 5720013000,
+        "eval_duration": 5809050000,
         "message": {
           "role": "assistant",
           "content": "이 공지 내용에서 언급된 **\"신청서 양식(파일 형식)\"** 에 대해 명확히 언급되어 있지 않습니다.\n\n즉, 공지문은 다음과 같은 내용을 담고 있습니다:\n\n- 재택근무 신청 절차가 변경됨  \n- 팀장 승인 후 인사팀(김지원 대리)에게 신청서 제출 필요  \n- 제출 기한: 매주 목요일까지  \n- 문의처: 인사팀 내선 1234  \n\n하지만 **신청서의 파일 형식**(예: PDF, Word, Excel 등)이나 **어떤 파일 형식으로 제공되는지**에 대해서는 **어떤 정보도 포함되어 있지 않습니다**.\n\n---\n\n✅ 결론:\n\n> 이 공지문에서 **신청서의 파일 형식**은 **명시되어 있지 않습니다**.  \n> 따라서, \"신청서 양식(파일 형식)\"이 무엇인지 알 수 없습니다.\n\n---\n\n💡 추천 답변 (실제 상황에 맞게 사용 가능):\n\n> 본 공지에서는 재택근무 신청 절차의 변경 사항을 안내하고 있으나, 신청서",
@@ -1232,6 +1702,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 5.849,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.07,
+        "eval_count": 256,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     },
     {
@@ -1244,15 +1725,15 @@
       "response_text": "이 공지 내용에서 언급된 **\"신청서 양식(파일 형식)\"** 에 대해 명확히 언급되어 있지 않습니다.\n\n즉, 공지문은 다음과 같은 내용을 담고 있습니다:\n\n- 재택근무 신청 절차가 변경됨  \n- 팀장 승인 후 인사팀(김지원 대리)에게 신청서 제출 필요  \n- 제출 기한: 매주 목요일까지  \n- 문의처: 인사팀 내선 1234  \n\n하지만 **신청서의 파일 형식**(예: PDF, Word, Excel 등)이나 **어떤 파일 형식으로 제공되는지**에 대해서는 **어떤 정보도 포함되어 있지 않습니다**.\n\n---\n\n✅ 결론:\n\n> 이 공지문에서 **신청서의 파일 형식**은 **명시되어 있지 않습니다**.  \n> 따라서, \"신청서 양식(파일 형식)\"이 무엇인지 알 수 없습니다.\n\n---\n\n💡 추천 답변 (실제 상황에 맞게 사용 가능):\n\n> 본 공지에서는 재택근무 신청 절차의 변경 사항을 안내하고 있으나, 신청서",
       "raw_response": {
         "model": "qwen3:4b-instruct-2507-q4_K_M",
-        "created_at": "2026-09-15T08:52:47.342455Z",
+        "created_at": "2026-09-16T01:50:44.307901Z",
         "done": true,
         "done_reason": "length",
-        "total_duration": 5745892459,
-        "load_duration": 584375,
+        "total_duration": 5979056334,
+        "load_duration": 733417,
         "prompt_eval_count": 141,
-        "prompt_eval_duration": 24415000,
+        "prompt_eval_duration": 23293000,
         "eval_count": 256,
-        "eval_duration": 5712793000,
+        "eval_duration": 5947601000,
         "message": {
           "role": "assistant",
           "content": "이 공지 내용에서 언급된 **\"신청서 양식(파일 형식)\"** 에 대해 명확히 언급되어 있지 않습니다.\n\n즉, 공지문은 다음과 같은 내용을 담고 있습니다:\n\n- 재택근무 신청 절차가 변경됨  \n- 팀장 승인 후 인사팀(김지원 대리)에게 신청서 제출 필요  \n- 제출 기한: 매주 목요일까지  \n- 문의처: 인사팀 내선 1234  \n\n하지만 **신청서의 파일 형식**(예: PDF, Word, Excel 등)이나 **어떤 파일 형식으로 제공되는지**에 대해서는 **어떤 정보도 포함되어 있지 않습니다**.\n\n---\n\n✅ 결론:\n\n> 이 공지문에서 **신청서의 파일 형식**은 **명시되어 있지 않습니다**.  \n> 따라서, \"신청서 양식(파일 형식)\"이 무엇인지 알 수 없습니다.\n\n---\n\n💡 추천 답변 (실제 상황에 맞게 사용 가능):\n\n> 본 공지에서는 재택근무 신청 절차의 변경 사항을 안내하고 있으나, 신청서",
@@ -1262,6 +1743,17 @@
           "tool_calls": null
         },
         "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 5.98,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 43.04,
+        "eval_count": 256,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
       }
     }
   ]

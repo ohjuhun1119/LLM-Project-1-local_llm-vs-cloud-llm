@@ -2,6 +2,7 @@
 
 로컬 LLM 2개를 ollama로 동일 조건에서 비교해 서비스 상황에 맞는 모델을 선정하고, Cloud API 모델과 소규모 비교를 통해 운영 방식을 검토하는 프로젝트입니다.
 
+
 ## 프로젝트 개요 
 - **문제 정의**: [docs/00-problem-definition.md](docs/00-problem-definition.md)
 - **모델 요구사항**: [docs/01-requirements.md](docs/01-requirements.md)
@@ -10,6 +11,7 @@
 - **후보 모델 설정 이유 및 타 모델 비교**: [docs/03-candidate-model.md](docs/03-candidate-model.md)
 - **flowchart**: [docs/04-flowchart.md](docs/04-flowchart.md)
 - **평가 질문 및 채점 기준**:[docs/05-eval-questions.md](docs/05-eval-questions.md)
+
 
 ## 개발 환경 설정
 
@@ -50,6 +52,7 @@ ollama -v        # 버전 확인
 ollama list       # 설치된 모델 목록 확인
 ```
 
+
 ## 실행 방법
 ### 1. ollama 모델 다운로드
 ```bash
@@ -78,7 +81,8 @@ python src/01_check_environment.py
     - 'generation_settings' : temperature, num_predict 생성 설정
     - 'results' : 각 모델의 응답 텍스트 및 원본 응답
 
-## 작업 순서
+
+- ## 작업 순서
 
 - [x] 문제 정의
 - [x] 모델 요구사항 정의
