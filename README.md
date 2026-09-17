@@ -55,6 +55,32 @@ ollama list       # 설치된 모델 목록 확인
 ```
 
 
+## 폴더 구조
+
+```
+.
+├── docs/                          # 단계별 문서
+│   ├── 00-problem-definition.md
+│   ├── 01-requirements.md
+│   ├── 02-use-case.md
+│   ├── 03-candidate-model.md
+│   ├── 04-flowchart.md
+│   ├── 05-eval-questions.md
+│   ├── 06-model-response.md
+│   ├── 07-model-comparison.md
+│   └── 08-local-vs-cloud.md
+├── src/                           # 실험 실행 스크립트
+│   ├── 01_check_environment.py    # STEP 3: 실행 환경 확인
+│   ├── 02_run_eval_questions.py   # STEP 6: 로컬 모델 비교 실험
+│   └── 03_cloud_eval_questions.py # STEP 7: Cloud API 비교
+├── results/                       # 실험 결과 (JSON)
+│   ├── environment_check_log.json
+│   ├── local_eval_log.json
+│   └── luna_eval_log.json
+└── README.md
+```
+
+
 ## 실행 방법
 ### 1. ollama 모델 다운로드
 ```bash
@@ -84,6 +110,40 @@ python src/01_check_environment.py
     - 'results' : 각 모델의 응답 텍스트 및 원본 응답
 
 
+### 4. 로컬 모델 비교 실험
+
+10개 질문(Q1~Q10)을 두 모델에 각각 2회씩(워밍업 1회 별도) 실행하고,
+응답 텍스트뿐 아니라 응답 시간·토큰 생성 속도·VRAM 사용량·모델 상세 정보(digest, 
+quantization_level, context_length)까지 `results/local_eval_log.json`에 기록합니다.
+
+```bash
+python src/02_run_eval_questions.py
+```
+
+**확인사항**:
+- 모델당 20회(10문항 × 2회)씩 정상적으로 응답하는지
+- `results/local_eval_log.json`에 아래 정보가 모두 기록되는지
+    - `warmup`: 워밍업 결과 (본 집계와 별도 기록)
+    - `results`: 질문별·회차별 응답, 성능 지표(elapsed_sec, tokens_per_sec, vram)
+    - `model_details`: 모델별 digest, quantization_level, context_length
+
+### 5. Cloud API(Luna) 소규모 비교
+
+STEP 5에서 미리 선정한 공통 질문 5개(Q1, Q3, Q5, Q6, Q9)를 Cloud API(`gpt-5.6-luna`)에
+각 1회씩 실행하고, 응답·성공/오류 상태·입력출력 토큰·응답 시간·예상 비용을
+`results/luna_eval_log.json`에 기록합니다.
+
+```bash
+python src/03_cloud_eval_questions.py
+```
+
+실행 시 OpenAI API 키를 입력하라는 프롬프트가 뜹니다 (화면에 표시되지 않으며, 코드·로그 어디에도 저장되지 않습니다).
+
+**확인사항**:
+- 5개 질문 모두 정상 응답하는지 (`성공 비율` 필드로 확인)
+- 비용은 **추정치**이며, [OpenAI 사용량 대시보드](https://platform.openai.com/usage)의
+  실제 청구 내역과 반드시 대조해야 합니다
+
 - ## 작업 순서
 
 - [x] 문제 정의
@@ -93,5 +153,5 @@ python src/01_check_environment.py
 - [x] 평가 질문 설계
 - [x] 실행 환경 준비
 - [x] 로컬 모델 비교 실험
-- [ ] Cloud API 소규모 비교
+- [x] Cloud API 소규모 비교
 - [ ] 최종 모델 선정 및 보고서 작성
