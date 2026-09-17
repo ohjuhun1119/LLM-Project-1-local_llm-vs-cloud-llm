@@ -11,6 +11,8 @@
 - **후보 모델 설정 이유 및 타 모델 비교**: [docs/03-candidate-model.md](docs/03-candidate-model.md)
 - **flowchart**: [docs/04-flowchart.md](docs/04-flowchart.md)
 - **평가 질문 및 채점 기준**:[docs/05-eval-questions.md](docs/05-eval-questions.md)
+- **Qwen, Gemma 로컬 실행 응답**:[docs/06-model-response.md](docs/06-model-response.md)
+- **모델 별 평가 및 종합 비교**: [docs/07-model-comparison.md](docs/07-model-comparison.md)
 
 
 ## 개발 환경 설정
