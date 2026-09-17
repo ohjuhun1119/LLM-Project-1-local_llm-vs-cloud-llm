@@ -13,7 +13,7 @@
 - **평가 질문 및 채점 기준**:[docs/05-eval-questions.md](docs/05-eval-questions.md)
 - **Qwen, Gemma 로컬 실행 응답**:[docs/06-model-response.md](docs/06-model-response.md)
 - **모델 별 평가 및 종합 비교**: [docs/07-model-comparison.md](docs/07-model-comparison.md)
-
+- **local, cloud 비교표 작성**:[docs/08-local-vs-cloud](docs/08-local-vs-cloud)
 
 ## 개발 환경 설정
 
