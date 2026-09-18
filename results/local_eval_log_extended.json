@@ -1,0 +1,448 @@
+{
+  "timestamp": "2026-09-18T02:03:02.260399+00:00",
+  "ollama_version": "ollama version is 0.34.0",
+  "device_info": {
+    "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python_version": "3.14.6"
+  },
+  "generation_settings": {
+    "temperature": 0,
+    "num_predict": 512
+  },
+  "runs_per_question": 2,
+  "model_details": {
+    "gemma3:4b": {
+      "digest": "a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma3",
+        "families": [
+          "gemma3"
+        ],
+        "parameter_size": "4.3B",
+        "quantization_level": "Q4_K_M"
+      },
+      "context_length": 131072
+    },
+    "qwen3:4b-instruct-2507-q4_K_M": {
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "4.0B",
+        "quantization_level": "Q4_K_M"
+      },
+      "context_length": 262144
+    }
+  },
+  "warmup": [
+    {
+      "model": "gemma3:4b",
+      "response_text": "안녕하세요! 무엇을 도와드릴까요? 궁금한 점이 있거나, 필요한 정보가 있다면 언제든지 말씀해주세요. 😊\n",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-18T02:03:03.156491Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 638500291,
+        "load_duration": 583541,
+        "prompt_eval_count": 12,
+        "prompt_eval_duration": 56734000,
+        "eval_count": 27,
+        "eval_duration": 579462000,
+        "message": {
+          "role": "assistant",
+          "content": "안녕하세요! 무엇을 도와드릴까요? 궁금한 점이 있거나, 필요한 정보가 있다면 언제든지 말씀해주세요. 😊\n",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 0.64,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 46.59,
+        "eval_count": 27,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
+      }
+    },
+    {
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "response_text": "안녕하세요! 😊 어떻게 도와드릴까요?",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-18T02:03:05.092346Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1933175000,
+        "load_duration": 1544772500,
+        "prompt_eval_count": 12,
+        "prompt_eval_duration": 98227000,
+        "eval_count": 14,
+        "eval_duration": 285682000,
+        "message": {
+          "role": "assistant",
+          "content": "안녕하세요! 😊 어떻게 도와드릴까요?",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.937,
+        "load_duration_sec": 1.545,
+        "tokens_per_sec": 49.01,
+        "eval_count": 14,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
+      }
+    }
+  ],
+  "results": [
+    {
+      "question_id": "Q9",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": true,
+      "model": "gemma3:4b",
+      "run": 1,
+      "prompt": "다음 보고서에서, 경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\n\n[3분기 진행 보고서] 프로젝트 X는 전체 일정의 70% 완료. 개발 파트는 예정대로 진행 중이나, 디자인 파트는 인력 부족으로 2주 지연 예상. 다음 마일스톤은 12월 1일 UAT 시작. 리스크: 외부 API 연동 지연 가능성 존재.",
+      "response_text": "제공된 보고서에는 경쟁사 대응에 대한 정보가 명시적으로 언급되어 있지 않습니다. 보고서는 프로젝트 X의 진행 상황과 관련된 정보만 담고 있습니다. \n\n보고서에서 알 수 있는 점은 다음과 같습니다.\n\n*   **디자인 파트의 지연:** 디자인 파트가 인력 부족으로 2주 지연될 가능성이 있어, 경쟁사들이 유사한 디자인 작업을 더 빠르게 완료하고 있을 가능성이 있습니다.\n*   **외부 API 연동 지연 리스크:** 외부 API 연동 지연은 프로젝트 전체 일정에 영향을 미칠 수 있으며, 경쟁사들이 API 연동을 더 효율적으로 처리하고 있을 가능성이 있습니다.\n\n**경쟁사 대응에 대한 추가 정보를 얻기 위해서는** 보고서 외에 다른 자료(시장 조사 보고서, 경쟁사 웹사이트, 뉴스 기사 등)를 참고해야 합니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-18T02:03:09.298934Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 4200841375,
+        "load_duration": 605834,
+        "prompt_eval_count": 99,
+        "prompt_eval_duration": 112680000,
+        "eval_count": 184,
+        "eval_duration": 4085738000,
+        "message": {
+          "role": "assistant",
+          "content": "제공된 보고서에는 경쟁사 대응에 대한 정보가 명시적으로 언급되어 있지 않습니다. 보고서는 프로젝트 X의 진행 상황과 관련된 정보만 담고 있습니다. \n\n보고서에서 알 수 있는 점은 다음과 같습니다.\n\n*   **디자인 파트의 지연:** 디자인 파트가 인력 부족으로 2주 지연될 가능성이 있어, 경쟁사들이 유사한 디자인 작업을 더 빠르게 완료하고 있을 가능성이 있습니다.\n*   **외부 API 연동 지연 리스크:** 외부 API 연동 지연은 프로젝트 전체 일정에 영향을 미칠 수 있으며, 경쟁사들이 API 연동을 더 효율적으로 처리하고 있을 가능성이 있습니다.\n\n**경쟁사 대응에 대한 추가 정보를 얻기 위해서는** 보고서 외에 다른 자료(시장 조사 보고서, 경쟁사 웹사이트, 뉴스 기사 등)를 참고해야 합니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 4.202,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 45.03,
+        "eval_count": 184,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
+      }
+    },
+    {
+      "question_id": "Q9",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": true,
+      "model": "gemma3:4b",
+      "run": 2,
+      "prompt": "다음 보고서에서, 경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\n\n[3분기 진행 보고서] 프로젝트 X는 전체 일정의 70% 완료. 개발 파트는 예정대로 진행 중이나, 디자인 파트는 인력 부족으로 2주 지연 예상. 다음 마일스톤은 12월 1일 UAT 시작. 리스크: 외부 API 연동 지연 가능성 존재.",
+      "response_text": "제공된 보고서에는 경쟁사 대응에 대한 정보가 명시적으로 언급되어 있지 않습니다. 보고서는 프로젝트 X의 진행 상황과 관련된 정보만 담고 있습니다. \n\n보고서에서 알 수 있는 점은 다음과 같습니다.\n\n*   **디자인 파트의 지연:** 디자인 파트가 인력 부족으로 2주 지연될 가능성이 있어, 경쟁사들이 유사한 디자인 작업을 더 빠르게 완료하고 있을 가능성이 있습니다.\n*   **외부 API 연동 지연 리스크:** 외부 API 연동 지연은 프로젝트 전체 일정에 영향을 미칠 수 있으며, 경쟁사들이 API 연동을 더 효율적으로 처리하고 있을 가능성이 있습니다.\n\n**경쟁사 대응에 대한 추가 정보를 얻기 위해서는** 보고서 외에 다른 자료(시장 조사 보고서, 경쟁사 웹사이트, 뉴스 기사 등)를 참고해야 합니다.",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-18T02:03:13.454054Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 4151661750,
+        "load_duration": 565959,
+        "prompt_eval_count": 99,
+        "prompt_eval_duration": 50979000,
+        "eval_count": 184,
+        "eval_duration": 4094008000,
+        "message": {
+          "role": "assistant",
+          "content": "제공된 보고서에는 경쟁사 대응에 대한 정보가 명시적으로 언급되어 있지 않습니다. 보고서는 프로젝트 X의 진행 상황과 관련된 정보만 담고 있습니다. \n\n보고서에서 알 수 있는 점은 다음과 같습니다.\n\n*   **디자인 파트의 지연:** 디자인 파트가 인력 부족으로 2주 지연될 가능성이 있어, 경쟁사들이 유사한 디자인 작업을 더 빠르게 완료하고 있을 가능성이 있습니다.\n*   **외부 API 연동 지연 리스크:** 외부 API 연동 지연은 프로젝트 전체 일정에 영향을 미칠 수 있으며, 경쟁사들이 API 연동을 더 효율적으로 처리하고 있을 가능성이 있습니다.\n\n**경쟁사 대응에 대한 추가 정보를 얻기 위해서는** 보고서 외에 다른 자료(시장 조사 보고서, 경쟁사 웹사이트, 뉴스 기사 등)를 참고해야 합니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 4.153,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.94,
+        "eval_count": 184,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
+      }
+    },
+    {
+      "question_id": "Q9",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": true,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 1,
+      "prompt": "다음 보고서에서, 경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\n\n[3분기 진행 보고서] 프로젝트 X는 전체 일정의 70% 완료. 개발 파트는 예정대로 진행 중이나, 디자인 파트는 인력 부족으로 2주 지연 예상. 다음 마일스톤은 12월 1일 UAT 시작. 리스크: 외부 API 연동 지연 가능성 존재.",
+      "response_text": "주어진 보고서에서 **경쟁사가 이 프로젝트에 어떻게 대응하고 있는지**에 대한 정보는 **직접적으로 언급되어 있지 않습니다**.\n\n보고서는 프로젝트 X의 내부 진행 상황(개발 및 디자인 파트의 진행 상태, 마일스톤, 리스크 등)을 설명하고 있지만, **경쟁사의 행동이나 반응**에 대한 내용은 전혀 포함되어 있지 않습니다.\n\n따라서, 이 보고서를 기반으로 **경쟁사가 어떻게 대응하고 있는지**를 판단할 수는 없습니다.\n\n✅ 결론:  \n**보고서 내용에서 경쟁사의 대응 방식은 명시되어 있지 않으며, 해당 정보는 제공되지 않았습니다.**  \n→ 따라서 \"경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\"에 대한 답변은 **불가능합니다**.\n\n> 💡 보완 제안: 만약 이 질문이 전략적 분석을 위한 것이면, 추가 정보(예: 시장 동향, 경쟁사의 발표, 제품 출시 일정 등)이 필요합니다. 현재 보고서는 내부 프로젝트의 진행 상황만을 담고 있습니다.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-18T02:03:19.657715Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 6200437500,
+        "load_duration": 596417,
+        "prompt_eval_count": 120,
+        "prompt_eval_duration": 105017000,
+        "eval_count": 272,
+        "eval_duration": 6090709000,
+        "message": {
+          "role": "assistant",
+          "content": "주어진 보고서에서 **경쟁사가 이 프로젝트에 어떻게 대응하고 있는지**에 대한 정보는 **직접적으로 언급되어 있지 않습니다**.\n\n보고서는 프로젝트 X의 내부 진행 상황(개발 및 디자인 파트의 진행 상태, 마일스톤, 리스크 등)을 설명하고 있지만, **경쟁사의 행동이나 반응**에 대한 내용은 전혀 포함되어 있지 않습니다.\n\n따라서, 이 보고서를 기반으로 **경쟁사가 어떻게 대응하고 있는지**를 판단할 수는 없습니다.\n\n✅ 결론:  \n**보고서 내용에서 경쟁사의 대응 방식은 명시되어 있지 않으며, 해당 정보는 제공되지 않았습니다.**  \n→ 따라서 \"경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\"에 대한 답변은 **불가능합니다**.\n\n> 💡 보완 제안: 만약 이 질문이 전략적 분석을 위한 것이면, 추가 정보(예: 시장 동향, 경쟁사의 발표, 제품 출시 일정 등)이 필요합니다. 현재 보고서는 내부 프로젝트의 진행 상황만을 담고 있습니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 6.202,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.66,
+        "eval_count": 272,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
+      }
+    },
+    {
+      "question_id": "Q9",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": true,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 2,
+      "prompt": "다음 보고서에서, 경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\n\n[3분기 진행 보고서] 프로젝트 X는 전체 일정의 70% 완료. 개발 파트는 예정대로 진행 중이나, 디자인 파트는 인력 부족으로 2주 지연 예상. 다음 마일스톤은 12월 1일 UAT 시작. 리스크: 외부 API 연동 지연 가능성 존재.",
+      "response_text": "주어진 보고서에서 **경쟁사가 이 프로젝트에 어떻게 대응하고 있는지**에 대한 정보는 **직접적으로 언급되어 있지 않습니다**.\n\n보고서는 프로젝트 X의 내부 진행 상황(개발 및 디자인 파트의 진행 상태, 마일스톤, 리스크 등)을 설명하고 있지만, **경쟁사의 행동이나 반응**에 대한 내용은 전혀 포함되어 있지 않습니다.\n\n따라서, 이 보고서를 기반으로 **경쟁사가 어떻게 대응하고 있는지**를 판단할 수는 없습니다.\n\n✅ 결론:  \n**보고서 내용에서 경쟁사의 대응 방식은 명시되어 있지 않으며, 해당 정보는 제공되지 않았습니다.**  \n→ 따라서 \"경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\"에 대한 답변은 **불가능합니다**.\n\n> 💡 보완 제안: 만약 이 질문이 전략적 분석을 위한 것이면, 추가 정보(예: 시장 동향, 경쟁사의 발표, 제품 출시 일정 등)이 필요합니다. 현재 보고서는 내부 프로젝트의 진행 상황만을 담고 있습니다.",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-18T02:03:26.160122Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 6499146667,
+        "load_duration": 646625,
+        "prompt_eval_count": 120,
+        "prompt_eval_duration": 23949000,
+        "eval_count": 272,
+        "eval_duration": 6464738000,
+        "message": {
+          "role": "assistant",
+          "content": "주어진 보고서에서 **경쟁사가 이 프로젝트에 어떻게 대응하고 있는지**에 대한 정보는 **직접적으로 언급되어 있지 않습니다**.\n\n보고서는 프로젝트 X의 내부 진행 상황(개발 및 디자인 파트의 진행 상태, 마일스톤, 리스크 등)을 설명하고 있지만, **경쟁사의 행동이나 반응**에 대한 내용은 전혀 포함되어 있지 않습니다.\n\n따라서, 이 보고서를 기반으로 **경쟁사가 어떻게 대응하고 있는지**를 판단할 수는 없습니다.\n\n✅ 결론:  \n**보고서 내용에서 경쟁사의 대응 방식은 명시되어 있지 않으며, 해당 정보는 제공되지 않았습니다.**  \n→ 따라서 \"경쟁사는 이 프로젝트에 어떻게 대응하고 있어?\"에 대한 답변은 **불가능합니다**.\n\n> 💡 보완 제안: 만약 이 질문이 전략적 분석을 위한 것이면, 추가 정보(예: 시장 동향, 경쟁사의 발표, 제품 출시 일정 등)이 필요합니다. 현재 보고서는 내부 프로젝트의 진행 상황만을 담고 있습니다.",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 6.5,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 42.07,
+        "eval_count": 272,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
+      }
+    },
+    {
+      "question_id": "Q10",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": false,
+      "model": "gemma3:4b",
+      "run": 1,
+      "prompt": "이 공지의 신청서 양식(파일 형식)이 뭐야?\n\n[사내 공지] 2026년 10월부터 재택근무 신청 절차가 변경됩니다. 기존에는 팀장 승인만 필요했으나, 앞으로는 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서는 매주 목요일까지 제출해야 다음 주 반영이 가능합니다. 문의는 인사팀 내선 1234로 부탁드립니다.",
+      "response_text": "제공된 공지에는 신청서 양식의 파일 형식에 대한 정보가 포함되어 있지 않습니다. \n\n공지 내용만으로는 신청서 파일 형식을 알 수 없습니다. \n\n**신청서 양식 파일 형식은 회사 내부 시스템이나 인사팀에 문의하여 확인해야 합니다.**\n",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-18T02:03:27.799953Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1638311750,
+        "load_duration": 597000,
+        "prompt_eval_count": 116,
+        "prompt_eval_duration": 126486000,
+        "eval_count": 64,
+        "eval_duration": 1509734000,
+        "message": {
+          "role": "assistant",
+          "content": "제공된 공지에는 신청서 양식의 파일 형식에 대한 정보가 포함되어 있지 않습니다. \n\n공지 내용만으로는 신청서 파일 형식을 알 수 없습니다. \n\n**신청서 양식 파일 형식은 회사 내부 시스템이나 인사팀에 문의하여 확인해야 합니다.**\n",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.639,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 42.39,
+        "eval_count": 64,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
+      }
+    },
+    {
+      "question_id": "Q10",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": false,
+      "model": "gemma3:4b",
+      "run": 2,
+      "prompt": "이 공지의 신청서 양식(파일 형식)이 뭐야?\n\n[사내 공지] 2026년 10월부터 재택근무 신청 절차가 변경됩니다. 기존에는 팀장 승인만 필요했으나, 앞으로는 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서는 매주 목요일까지 제출해야 다음 주 반영이 가능합니다. 문의는 인사팀 내선 1234로 부탁드립니다.",
+      "response_text": "제공된 공지에는 신청서 양식의 파일 형식에 대한 정보가 포함되어 있지 않습니다. \n\n공지 내용만으로는 신청서 파일 형식을 알 수 없습니다. \n\n**신청서 양식 파일 형식은 회사 내부 시스템이나 인사팀에 문의하여 확인해야 합니다.**\n",
+      "raw_response": {
+        "model": "gemma3:4b",
+        "created_at": "2026-09-18T02:03:29.288902Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1486530625,
+        "load_duration": 616750,
+        "prompt_eval_count": 116,
+        "prompt_eval_duration": 52105000,
+        "eval_count": 64,
+        "eval_duration": 1432674000,
+        "message": {
+          "role": "assistant",
+          "content": "제공된 공지에는 신청서 양식의 파일 형식에 대한 정보가 포함되어 있지 않습니다. \n\n공지 내용만으로는 신청서 파일 형식을 알 수 없습니다. \n\n**신청서 양식 파일 형식은 회사 내부 시스템이나 인사팀에 문의하여 확인해야 합니다.**\n",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 1.488,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 44.67,
+        "eval_count": 64,
+        "vram": {
+          "size_vram_mib": 3552.9,
+          "size_total_mib": 3552.9,
+          "load_status": "Full GPU"
+        }
+      }
+    },
+    {
+      "question_id": "Q10",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": false,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 1,
+      "prompt": "이 공지의 신청서 양식(파일 형식)이 뭐야?\n\n[사내 공지] 2026년 10월부터 재택근무 신청 절차가 변경됩니다. 기존에는 팀장 승인만 필요했으나, 앞으로는 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서는 매주 목요일까지 제출해야 다음 주 반영이 가능합니다. 문의는 인사팀 내선 1234로 부탁드립니다.",
+      "response_text": "이 공지 내용에서 언급된 **\"신청서 양식(파일 형식)\"** 에 대해 명확히 언급되어 있지 않습니다.\n\n즉, 공지문은 다음과 같은 내용을 담고 있습니다:\n\n- 재택근무 신청 절차가 변경됨  \n- 팀장 승인 후 인사팀(김지원 대리)에게 신청서 제출 필요  \n- 제출 기한: 매주 목요일까지  \n- 문의처: 인사팀 내선 1234  \n\n하지만 **신청서의 파일 형식**(예: PDF, Word, Excel 등)이나 **어떤 파일 형식으로 제공되는지**에 대해서는 **어떤 정보도 포함되어 있지 않습니다**.\n\n---\n\n✅ 결론:\n\n> 이 공지문에서 **신청서의 파일 형식**은 **명시되어 있지 않습니다**.  \n> 따라서, \"신청서 양식(파일 형식)\"이 무엇인지 알 수 없습니다.\n\n---\n\n💡 추천 답변 (실제 상황에 맞게 사용 가능):\n\n> 본 공지에서는 재택근무 신청 절차의 변경 사항을 안내하고 있으나, 신청서의 **파일 형식**(예: PDF, Word 등)에 대한 구체적인 정보는 포함되어 있지 않습니다.  \n> 관련 양식은 인사팀(김지원 대리)에게 직접 문의하여 확인하시기 바랍니다.\n\n또는, 만약 이 공지를 작성한 조직이 내부 시스템을 운영하고 있다면,  \n일반적으로는 **Word 문서(.docx)** 또는 **PDF 파일**로 공식적으로 배포되며,  \n이러한 정보는 인사팀에 직접 문의해야 합니다.\n\n---\n\n📌 요약:  \n**공지문에서 신청서의 파일 형식은 언급되지 않았습니다.**  \n→ 추가 문의 필요 (인사팀 김지원 대리에게)",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-18T02:03:38.933835Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 9642017125,
+        "load_duration": 644625,
+        "prompt_eval_count": 141,
+        "prompt_eval_duration": 175711000,
+        "eval_count": 415,
+        "eval_duration": 9462201000,
+        "message": {
+          "role": "assistant",
+          "content": "이 공지 내용에서 언급된 **\"신청서 양식(파일 형식)\"** 에 대해 명확히 언급되어 있지 않습니다.\n\n즉, 공지문은 다음과 같은 내용을 담고 있습니다:\n\n- 재택근무 신청 절차가 변경됨  \n- 팀장 승인 후 인사팀(김지원 대리)에게 신청서 제출 필요  \n- 제출 기한: 매주 목요일까지  \n- 문의처: 인사팀 내선 1234  \n\n하지만 **신청서의 파일 형식**(예: PDF, Word, Excel 등)이나 **어떤 파일 형식으로 제공되는지**에 대해서는 **어떤 정보도 포함되어 있지 않습니다**.\n\n---\n\n✅ 결론:\n\n> 이 공지문에서 **신청서의 파일 형식**은 **명시되어 있지 않습니다**.  \n> 따라서, \"신청서 양식(파일 형식)\"이 무엇인지 알 수 없습니다.\n\n---\n\n💡 추천 답변 (실제 상황에 맞게 사용 가능):\n\n> 본 공지에서는 재택근무 신청 절차의 변경 사항을 안내하고 있으나, 신청서의 **파일 형식**(예: PDF, Word 등)에 대한 구체적인 정보는 포함되어 있지 않습니다.  \n> 관련 양식은 인사팀(김지원 대리)에게 직접 문의하여 확인하시기 바랍니다.\n\n또는, 만약 이 공지를 작성한 조직이 내부 시스템을 운영하고 있다면,  \n일반적으로는 **Word 문서(.docx)** 또는 **PDF 파일**로 공식적으로 배포되며,  \n이러한 정보는 인사팀에 직접 문의해야 합니다.\n\n---\n\n📌 요약:  \n**공지문에서 신청서의 파일 형식은 언급되지 않았습니다.**  \n→ 추가 문의 필요 (인사팀 김지원 대리에게)",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 9.644,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 43.86,
+        "eval_count": 415,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
+      }
+    },
+    {
+      "question_id": "Q10",
+      "category": "정보 부족·범위 밖",
+      "is_cloud_comparison": false,
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "run": 2,
+      "prompt": "이 공지의 신청서 양식(파일 형식)이 뭐야?\n\n[사내 공지] 2026년 10월부터 재택근무 신청 절차가 변경됩니다. 기존에는 팀장 승인만 필요했으나, 앞으로는 팀장 승인 후 인사팀(김지원 대리)에게 신청서를 제출해야 합니다. 신청서는 매주 목요일까지 제출해야 다음 주 반영이 가능합니다. 문의는 인사팀 내선 1234로 부탁드립니다.",
+      "response_text": "이 공지 내용에서 언급된 **\"신청서 양식(파일 형식)\"** 에 대해 명확히 언급되어 있지 않습니다.\n\n즉, 공지문은 다음과 같은 내용을 담고 있습니다:\n\n- 재택근무 신청 절차가 변경됨  \n- 팀장 승인 후 인사팀(김지원 대리)에게 신청서 제출 필요  \n- 제출 기한: 매주 목요일까지  \n- 문의처: 인사팀 내선 1234  \n\n하지만 **신청서의 파일 형식**(예: PDF, Word, Excel 등)이나 **어떤 파일 형식으로 제공되는지**에 대해서는 **어떤 정보도 포함되어 있지 않습니다**.\n\n---\n\n✅ 결론:\n\n> 이 공지문에서 **신청서의 파일 형식**은 **명시되어 있지 않습니다**.  \n> 따라서, \"신청서 양식(파일 형식)\"이 무엇인지 알 수 없습니다.\n\n---\n\n💡 추천 답변 (실제 상황에 맞게 사용 가능):\n\n> 본 공지에서는 재택근무 신청 절차의 변경 사항을 안내하고 있으나, 신청서의 **파일 형식**(예: PDF, Word 등)에 대한 구체적인 정보는 포함되어 있지 않습니다.  \n> 관련 양식은 인사팀(김지원 대리)에게 직접 문의하여 확인하시기 바랍니다.\n\n또는, 만약 이 공지를 작성한 조직이 내부 시스템을 운영하고 있다면,  \n일반적으로는 **Word 문서(.docx)** 또는 **PDF 파일**로 공식적으로 배포되며,  \n이러한 정보는 인사팀에 직접 문의해야 합니다.\n\n---\n\n📌 요약:  \n**공지문에서 신청서의 파일 형식은 언급되지 않았습니다.**  \n→ 추가 문의 필요 (인사팀 김지원 대리에게)",
+      "raw_response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-18T02:03:48.744241Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 9807148833,
+        "load_duration": 631583,
+        "prompt_eval_count": 141,
+        "prompt_eval_duration": 23851000,
+        "eval_count": 415,
+        "eval_duration": 9768142000,
+        "message": {
+          "role": "assistant",
+          "content": "이 공지 내용에서 언급된 **\"신청서 양식(파일 형식)\"** 에 대해 명확히 언급되어 있지 않습니다.\n\n즉, 공지문은 다음과 같은 내용을 담고 있습니다:\n\n- 재택근무 신청 절차가 변경됨  \n- 팀장 승인 후 인사팀(김지원 대리)에게 신청서 제출 필요  \n- 제출 기한: 매주 목요일까지  \n- 문의처: 인사팀 내선 1234  \n\n하지만 **신청서의 파일 형식**(예: PDF, Word, Excel 등)이나 **어떤 파일 형식으로 제공되는지**에 대해서는 **어떤 정보도 포함되어 있지 않습니다**.\n\n---\n\n✅ 결론:\n\n> 이 공지문에서 **신청서의 파일 형식**은 **명시되어 있지 않습니다**.  \n> 따라서, \"신청서 양식(파일 형식)\"이 무엇인지 알 수 없습니다.\n\n---\n\n💡 추천 답변 (실제 상황에 맞게 사용 가능):\n\n> 본 공지에서는 재택근무 신청 절차의 변경 사항을 안내하고 있으나, 신청서의 **파일 형식**(예: PDF, Word 등)에 대한 구체적인 정보는 포함되어 있지 않습니다.  \n> 관련 양식은 인사팀(김지원 대리)에게 직접 문의하여 확인하시기 바랍니다.\n\n또는, 만약 이 공지를 작성한 조직이 내부 시스템을 운영하고 있다면,  \n일반적으로는 **Word 문서(.docx)** 또는 **PDF 파일**로 공식적으로 배포되며,  \n이러한 정보는 인사팀에 직접 문의해야 합니다.\n\n---\n\n📌 요약:  \n**공지문에서 신청서의 파일 형식은 언급되지 않았습니다.**  \n→ 추가 문의 필요 (인사팀 김지원 대리에게)",
+          "thinking": null,
+          "images": null,
+          "tool_name": null,
+          "tool_calls": null
+        },
+        "logprobs": null
+      },
+      "performance": {
+        "elapsed_sec": 9.808,
+        "load_duration_sec": 0.001,
+        "tokens_per_sec": 42.49,
+        "eval_count": 415,
+        "vram": {
+          "size_vram_mib": 3028.2,
+          "size_total_mib": 3028.2,
+          "load_status": "Full GPU"
+        }
+      }
+    }
+  ]
+}
