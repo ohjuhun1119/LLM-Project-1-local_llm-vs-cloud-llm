@@ -14,7 +14,7 @@
 - **Qwen, Gemma 로컬 실행 응답**:[docs/06-model-response.md](docs/06-model-response.md)
 - **모델 별 평가 및 종합 비교**: [docs/07-model-comparison.md](docs/07-model-comparison.md)
 - **Local, Cloud 비교표 작성**:[docs/08-local-vs-cloud.md](docs/08-local-vs-cloud.md)
-- **최종 모델 선정**: [docs/09-final-model-selection.md](docs/09-final-model-selection.md)
+- **최종 모델 선정 및 추가 실험**: [docs/09-final-model-selection.md](docs/09-final-model-selection.md)
 
 ## 개발 환경 설정
 
@@ -155,4 +155,4 @@ python src/03_cloud_eval_questions.py
 - [x] 실행 환경 준비
 - [x] 로컬 모델 비교 실험
 - [x] Cloud API 소규모 비교
-- [ ] 최종 모델 선정 및 보고서 작성
+- [x] 최종 모델 선정 및 보고서 작성
